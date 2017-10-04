@@ -5,7 +5,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6};
 
     int choice = -1;
     do {
@@ -21,6 +21,7 @@ int main() {
         printf("\n[%2d] %s", 3, "swap two integers");
         printf("\n[%2d] %s", 4, "quadratic equation");
         printf("\n[%2d] %s", 5, "guess the season by month");
+        printf("\n[%2d] %s", 6, "print age");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -157,5 +158,27 @@ void task5() {
             break;
         default:
             printf("Unknown month");
+    }
+}
+
+/*
+ * 6. Ввести возраст человека (от 1 до 150 лет)
+ * и вывести его вместе с последующим словом «год», «года» или «лет».
+ */
+void task6() {
+    int age;
+    printf("please enter a person's age: ");
+    scanf("%d", &age);
+
+    printf("%d ", age);
+    int suffix;
+    if (suffix = age % 100, suffix >= 11 && suffix <= 14) {
+        printf("let");
+    } else if (suffix = age % 10, suffix == 1) {
+        printf("god");
+    } else if (suffix = age % 10, suffix >= 2 && suffix <= 4) {
+        printf("goda");
+    } else {
+        printf("let");
     }
 }
