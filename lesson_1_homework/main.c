@@ -83,4 +83,6 @@ void task3() {
     y ^= x;
     x ^= y;
     printf("\nswapB: %d, %d", x, y);
+
+    printf("\ncheck: %d, %d", b, a);
 }
