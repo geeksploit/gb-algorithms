@@ -215,5 +215,6 @@ void task8() {
     for (int i = a; i <= b; i++) {
         int square = i * i;
         int cube = square * i;
+        printf("\n%10d %10d %10d", i, square, cube);
     }
 }
