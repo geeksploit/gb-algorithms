@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 
 int main() {
@@ -14,4 +15,12 @@ int main() {
     } while (scanf("%d", &choice));
 
     return 0;
+}
+
+/*
+ * Exit the application.
+ */
+void task0() {
+    printf("thanks for staying with us, bye\n");
+    exit(0);
 }
