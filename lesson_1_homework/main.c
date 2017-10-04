@@ -71,4 +71,9 @@ void task3() {
     scanf("%d %d", &a, &b);
 
     int x, y;
+
+    x = a, y = b;
+    int c = x;
+    x = y;
+    y = c;
 }
