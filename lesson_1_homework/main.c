@@ -4,7 +4,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3};
 
     int choice = -1;
     do {
@@ -17,6 +17,7 @@ int main() {
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "body mass index");
         printf("\n[%2d] %s", 2, "max of four");
+        printf("\n[%2d] %s", 3, "swap two integers");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
