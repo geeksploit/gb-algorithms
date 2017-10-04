@@ -53,4 +53,5 @@ void task2() {
     scanf("%d %d %d %d", &a, &b, &c, &d);
 
     int max1 = a > b ? a : b;
+    int max2 = c > d ? c : d;
 }
