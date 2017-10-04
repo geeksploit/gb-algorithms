@@ -51,4 +51,6 @@ void task2() {
     int a, b, c, d;
     printf("please enter four integers: ");
     scanf("%d %d %d %d", &a, &b, &c, &d);
+
+    int max1 = a > b ? a : b;
 }
