@@ -129,4 +129,7 @@ void task4() {
  * Требуется определить, к какому времени года он относится.
  */
 void task5() {
+    int month;
+    printf("please enter the number of a month: ");
+    scanf("%d", &month);
 }
