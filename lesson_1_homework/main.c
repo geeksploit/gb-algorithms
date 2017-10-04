@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include "main.h"
 
 int main() {
@@ -105,6 +106,10 @@ void task4() {
         if (discriminant == 0) {
             x1 = -(float) b / (2 * a);
             printf("there is only one (double) root: %.2f", x1);
+        } else if (discriminant > 0) {
+            x1 = (-b - sqrt(discriminant)) / (2 * a);
+            x2 = (-b + sqrt(discriminant)) / (2 * a);
+            printf("two real roots are: %.2f and %.2f", x1, x2);
         }
     }
 }
