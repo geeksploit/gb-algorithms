@@ -66,4 +66,7 @@ void task2() {
  * b.*без использования третьей переменной.
  */
 void task3() {
+    int a, b;
+    printf("please enter two numbers: ");
+    scanf("%d %d", &a, &b);
 }
