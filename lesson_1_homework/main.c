@@ -4,7 +4,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1};
+    void (*menu[15])(void) = {&task0, &task1, &task2};
 
     int choice = -1;
     do {
@@ -16,6 +16,7 @@ int main() {
         printf("\nplease enter your choice to proceed:");
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "body mass index");
+        printf("\n[%2d] %s", 2, "max of four");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
