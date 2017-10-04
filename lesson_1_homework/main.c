@@ -54,4 +54,5 @@ void task2() {
 
     int max1 = a > b ? a : b;
     int max2 = c > d ? c : d;
+    int max = max1 > max2 ? max1 : max2;
 }
