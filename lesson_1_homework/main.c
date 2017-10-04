@@ -173,5 +173,7 @@ void task6() {
     int suffix;
     if (suffix = age % 100, suffix >= 11 && suffix <= 14) {
         printf("let");
+    } else if (suffix = age % 10, suffix == 1) {
+        printf("god");
     }
 }
