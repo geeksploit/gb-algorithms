@@ -43,3 +43,9 @@ void task1() {
     float massIndex = weight / (height * height);
     printf("mass index is: %.2f", massIndex);
 }
+
+/*
+ * 2. Найти максимальное из четырех чисел. Массивы не использовать.
+ */
+void task2() {
+}
