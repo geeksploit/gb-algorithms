@@ -194,4 +194,10 @@ void task7() {
 
     int sum1 = x1 + y1;
     int sum2 = x2 + y2;
+
+    if (sum1 % 2 == sum2 % 2) {
+        printf("both fields are of the same color");
+    } else {
+        printf("fields are of different colors");
+    }
 }
