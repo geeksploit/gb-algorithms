@@ -4,7 +4,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1};
+    void (*menu[15])(void) = {&task0, &task1, &task2};
 
     int choice = -1;
     do {
@@ -16,6 +16,7 @@ int main() {
         printf("\nplease enter your choice to proceed:");
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "body mass index");
+        printf("\n[%2d] %s", 2, "max of four");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -42,4 +43,19 @@ void task1() {
 
     float massIndex = weight / (height * height);
     printf("mass index is: %.2f", massIndex);
+}
+
+/*
+ * 2. Найти максимальное из четырех чисел. Массивы не использовать.
+ */
+void task2() {
+    int a, b, c, d;
+    printf("please enter four integers: ");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
+
+    int max1 = a > b ? a : b;
+    int max2 = c > d ? c : d;
+    int max = max1 > max2 ? max1 : max2;
+
+    printf("maximum is: %d", max);
 }
