@@ -165,4 +165,7 @@ void task5() {
  * и вывести его вместе с последующим словом «год», «года» или «лет».
  */
 void task6() {
+    int age;
+    printf("please enter a person's age: ");
+    scanf("%d", &age);
 }
