@@ -110,6 +110,11 @@ void task4() {
             x1 = (-b - sqrt(discriminant)) / (2 * a);
             x2 = (-b + sqrt(discriminant)) / (2 * a);
             printf("two real roots are: %.2f and %.2f", x1, x2);
+        } else {
+            float real = -(float) b / (2 * a);
+            x1 = sqrt(-discriminant) / (2 * a);
+            x2 = sqrt(-discriminant) / (2 * a);
+            printf("two imaginary roots are: %.2f + %.2fi and %.2f - %.2fi", real, x1, real, x2);
         }
     }
 }
