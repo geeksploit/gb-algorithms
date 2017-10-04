@@ -5,7 +5,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6};
 
     int choice = -1;
     do {
@@ -21,6 +21,7 @@ int main() {
         printf("\n[%2d] %s", 3, "swap two integers");
         printf("\n[%2d] %s", 4, "quadratic equation");
         printf("\n[%2d] %s", 5, "guess the season by month");
+        printf("\n[%2d] %s", 6, "print age");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
