@@ -202,3 +202,9 @@ void task7() {
         printf("fields are of different colors");
     }
 }
+
+/*
+ * 8. Ввести a и b и вывести квадраты и кубы чисел от a до b.
+ */
+void task8() {
+}
