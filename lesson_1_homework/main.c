@@ -139,6 +139,11 @@ void task5() {
         case 2:
             printf("Winter");
             break;
+        case 3:
+        case 4:
+        case 5:
+            printf("Spring");
+            break;
         default:
             printf("Unknown month");
     }
