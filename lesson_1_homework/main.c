@@ -35,4 +35,7 @@ void task0() {
  * где m-масса тела в килограммах, h - рост в метрах.
  */
 void task1() {
+    float weight, height;
+    printf("please enter person's weight (kg) and height (m): ");
+    scanf("%f %f", &weight, &height);
 }
