@@ -5,7 +5,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7};
 
     int choice = -1;
     do {
@@ -22,6 +22,7 @@ int main() {
         printf("\n[%2d] %s", 4, "quadratic equation");
         printf("\n[%2d] %s", 5, "guess the season by month");
         printf("\n[%2d] %s", 6, "print age");
+        printf("\n[%2d] %s", 7, "match chess fields by color");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -180,5 +181,24 @@ void task6() {
         printf("goda");
     } else {
         printf("let");
+    }
+}
+
+/*
+ * 7. С клавиатуры вводятся числовые координаты двух полей шахматной доски (x1,y1,x2,y2).
+ * Требуется определить, относятся ли к поля к одному цвету или нет.
+ */
+void task7() {
+    int x1, y1, x2, y2;
+    printf("please enter coordinates (x1, y1) and (x2, y2): ");
+    scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
+
+    int sum1 = x1 + y1;
+    int sum2 = x2 + y2;
+
+    if (sum1 % 2 == sum2 % 2) {
+        printf("both fields are of the same color");
+    } else {
+        printf("fields are of different colors");
     }
 }
