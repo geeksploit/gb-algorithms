@@ -48,4 +48,7 @@ void task1() {
  * 2. Найти максимальное из четырех чисел. Массивы не использовать.
  */
 void task2() {
+    int a, b, c, d;
+    printf("please enter four integers: ");
+    scanf("%d %d %d %d", &a, &b, &c, &d);
 }
