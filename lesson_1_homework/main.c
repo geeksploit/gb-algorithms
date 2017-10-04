@@ -191,4 +191,7 @@ void task7() {
     int x1, y1, x2, y2;
     printf("please enter coordinates (x1, y1) and (x2, y2): ");
     scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
+
+    int sum1 = x1 + y1;
+    int sum2 = x2 + y2;
 }
