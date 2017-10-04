@@ -1,10 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include "main.h"
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4};
 
     int choice = -1;
     do {
@@ -18,6 +19,7 @@ int main() {
         printf("\n[%2d] %s", 1, "body mass index");
         printf("\n[%2d] %s", 2, "max of four");
         printf("\n[%2d] %s", 3, "swap two integers");
+        printf("\n[%2d] %s", 4, "quadratic equation");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -86,4 +88,38 @@ void task3() {
     printf("\nswapB: %d, %d", x, y);
 
     printf("\ncheck: %d, %d", b, a);
+}
+
+/*
+ * 4. Написать программу нахождения корней заданного квадратного уравнения.
+ */
+void task4() {
+    int a, b, c;
+    printf("please enter coefficients a, b and c: ");
+    scanf("%d %d %d", &a, &b, &c);
+
+    float x1, x2;
+    if (a == 0 && b == 0) {
+        printf("this is not an equation");
+        return;
+    }
+    if (a == 0) {
+        x1 = -(float) c / b;
+        printf("becomes a linear equation, which has one root: %.2f", x1);
+    } else {
+        float discriminant = b * b - 4 * a * c;
+        if (discriminant == 0) {
+            x1 = -(float) b / (2 * a);
+            printf("there is only one (double) root: %.2f", x1);
+        } else if (discriminant > 0) {
+            x1 = (-b - sqrt(discriminant)) / (2 * a);
+            x2 = (-b + sqrt(discriminant)) / (2 * a);
+            printf("two real roots are: %.2f and %.2f", x1, x2);
+        } else {
+            float real = -(float) b / (2 * a);
+            x1 = sqrt(-discriminant) / (2 * a);
+            x2 = sqrt(-discriminant) / (2 * a);
+            printf("two imaginary roots are: %.2f + %.2fi and %.2f - %.2fi", real, x1, real, x2);
+        }
+    }
 }
