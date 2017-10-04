@@ -212,4 +212,6 @@ void task8() {
     scanf("%d %d", &a, &b);
 
     printf("\n%10s %10s %10s", "number", "square", "cube");
+    for (int i = a; i <= b; i++) {
+    }
 }
