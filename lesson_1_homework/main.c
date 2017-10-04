@@ -177,5 +177,7 @@ void task6() {
         printf("god");
     } else if (suffix = age % 10, suffix >= 2 && suffix <= 4) {
         printf("goda");
+    } else {
+        printf("let");
     }
 }
