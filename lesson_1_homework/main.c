@@ -4,7 +4,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3};
 
     int choice = -1;
     do {
@@ -17,6 +17,7 @@ int main() {
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "body mass index");
         printf("\n[%2d] %s", 2, "max of four");
+        printf("\n[%2d] %s", 3, "swap two integers");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -58,4 +59,31 @@ void task2() {
     int max = max1 > max2 ? max1 : max2;
 
     printf("maximum is: %d", max);
+}
+
+/*
+ * 3. Написать программу обмена значениями двух целочисленных переменных:
+ * a. с использованием третьей переменной;
+ * b.*без использования третьей переменной.
+ */
+void task3() {
+    int a, b;
+    printf("please enter two numbers: ");
+    scanf("%d %d", &a, &b);
+
+    int x, y;
+
+    x = a, y = b;
+    int c = x;
+    x = y;
+    y = c;
+    printf("\nswapA: %d, %d", x, y);
+
+    x = a, y = b;
+    x ^= y;
+    y ^= x;
+    x ^= y;
+    printf("\nswapB: %d, %d", x, y);
+
+    printf("\ncheck: %d, %d", b, a);
 }
