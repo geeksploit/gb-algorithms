@@ -132,4 +132,9 @@ void task5() {
     int month;
     printf("please enter the number of a month: ");
     scanf("%d", &month);
+
+    switch (month) {
+        default:
+            printf("Unknown month");
+    }
 }
