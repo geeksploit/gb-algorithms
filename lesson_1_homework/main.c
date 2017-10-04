@@ -102,5 +102,9 @@ void task4() {
         printf("becomes a linear equation, which has one root: %.2f", x1);
     } else {
         float discriminant = b * b - 4 * a * c;
+        if (discriminant == 0) {
+            x1 = -(float) b / (2 * a);
+            printf("there is only one (double) root: %.2f", x1);
+        }
     }
 }
