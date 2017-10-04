@@ -40,4 +40,5 @@ void task1() {
     scanf("%f %f", &weight, &height);
 
     float massIndex = weight / (height * height);
+    printf("mass index is: %.2f", massIndex);
 }
