@@ -97,4 +97,8 @@ void task4() {
     scanf("%d %d %d", &a, &b, &c);
 
     float x1, x2;
+    if (a == 0) {
+        x1 = -(float) c / b;
+        printf("becomes a linear equation, which has one root: %.2f", x1);
+    }
 }
