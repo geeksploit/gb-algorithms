@@ -210,4 +210,6 @@ void task8() {
     int a, b;
     printf("please enter two numbers:");
     scanf("%d %d", &a, &b);
+
+    printf("\n%10s %10s %10s", "number", "square", "cube");
 }
