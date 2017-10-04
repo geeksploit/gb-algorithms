@@ -95,4 +95,6 @@ void task4() {
     int a, b, c;
     printf("please enter coefficients a, b and c: ");
     scanf("%d %d %d", &a, &b, &c);
+
+    float x1, x2;
 }
