@@ -76,4 +76,5 @@ void task3() {
     int c = x;
     x = y;
     y = c;
+    printf("\nswapA: %d, %d", x, y);
 }
