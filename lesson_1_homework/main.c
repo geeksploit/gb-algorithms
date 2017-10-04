@@ -168,4 +168,10 @@ void task6() {
     int age;
     printf("please enter a person's age: ");
     scanf("%d", &age);
+
+    printf("%d ", age);
+    int suffix;
+    if (suffix = age % 100, suffix >= 11 && suffix <= 14) {
+        printf("let");
+    }
 }
