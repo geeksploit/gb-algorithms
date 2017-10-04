@@ -4,10 +4,13 @@
 
 int main() {
 
+    void (*menu[15])(void) = {&task0};
+
     int choice = -1;
     do {
         if (choice >= 0 && choice <= 14) {
             printf("\nTASK %d\n", choice);
+            menu[choice]();
         }
         printf("\n\nMENU");
         printf("\nplease enter your choice to proceed:");
