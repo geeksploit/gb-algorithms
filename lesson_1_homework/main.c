@@ -213,5 +213,7 @@ void task8() {
 
     printf("\n%10s %10s %10s", "number", "square", "cube");
     for (int i = a; i <= b; i++) {
+        int square = i * i;
+        int cube = square * i;
     }
 }
