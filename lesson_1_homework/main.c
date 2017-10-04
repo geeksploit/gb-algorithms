@@ -5,7 +5,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5};
 
     int choice = -1;
     do {
@@ -20,6 +20,7 @@ int main() {
         printf("\n[%2d] %s", 2, "max of four");
         printf("\n[%2d] %s", 3, "swap two integers");
         printf("\n[%2d] %s", 4, "quadratic equation");
+        printf("\n[%2d] %s", 5, "guess the season by month");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -121,5 +122,40 @@ void task4() {
             x2 = sqrt(-discriminant) / (2 * a);
             printf("two imaginary roots are: %.2f + %.2fi and %.2f - %.2fi", real, x1, real, x2);
         }
+    }
+}
+
+/*
+ * 5. С клавиатуры вводится номер месяца.
+ * Требуется определить, к какому времени года он относится.
+ */
+void task5() {
+    int month;
+    printf("please enter the number of a month: ");
+    scanf("%d", &month);
+
+    switch (month) {
+        case 12:
+        case 1:
+        case 2:
+            printf("Winter");
+            break;
+        case 3:
+        case 4:
+        case 5:
+            printf("Spring");
+            break;
+        case 6:
+        case 7:
+        case 8:
+            printf("Summer");
+            break;
+        case 9:
+        case 10:
+        case 11:
+            printf("Autumn");
+            break;
+        default:
+            printf("Unknown month");
     }
 }
