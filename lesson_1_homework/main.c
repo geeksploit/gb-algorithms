@@ -69,4 +69,6 @@ void task3() {
     int a, b;
     printf("please enter two numbers: ");
     scanf("%d %d", &a, &b);
+
+    int x, y;
 }
