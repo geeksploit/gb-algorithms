@@ -5,7 +5,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8};
 
     int choice = -1;
     do {
@@ -23,6 +23,7 @@ int main() {
         printf("\n[%2d] %s", 5, "guess the season by month");
         printf("\n[%2d] %s", 6, "print age");
         printf("\n[%2d] %s", 7, "match chess fields by color");
+        printf("\n[%2d] %s", 8, "print squares and cubes");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -200,5 +201,21 @@ void task7() {
         printf("both fields are of the same color");
     } else {
         printf("fields are of different colors");
+    }
+}
+
+/*
+ * 8. Ввести a и b и вывести квадраты и кубы чисел от a до b.
+ */
+void task8() {
+    int a, b;
+    printf("please enter two numbers:");
+    scanf("%d %d", &a, &b);
+
+    printf("\n%10s %10s %10s", "number", "square", "cube");
+    for (int i = a; i <= b; i++) {
+        int square = i * i;
+        int cube = square * i;
+        printf("\n%10d %10d %10d", i, square, cube);
     }
 }
