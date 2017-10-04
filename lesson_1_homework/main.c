@@ -188,4 +188,7 @@ void task6() {
  * Требуется определить, относятся ли к поля к одному цвету или нет.
  */
 void task7() {
+    int x1, y1, x2, y2;
+    printf("please enter coordinates (x1, y1) and (x2, y2): ");
+    scanf("%d %d %d %d", &x1, &y1, &x2, &y2);
 }
