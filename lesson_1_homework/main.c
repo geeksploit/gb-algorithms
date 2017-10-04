@@ -207,4 +207,7 @@ void task7() {
  * 8. Ввести a и b и вывести квадраты и кубы чисел от a до b.
  */
 void task8() {
+    int a, b;
+    printf("please enter two numbers:");
+    scanf("%d %d", &a, &b);
 }
