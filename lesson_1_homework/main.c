@@ -5,7 +5,7 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9};
 
     int choice = -1;
     do {
@@ -24,6 +24,7 @@ int main() {
         printf("\n[%2d] %s", 6, "print age");
         printf("\n[%2d] %s", 7, "match chess fields by color");
         printf("\n[%2d] %s", 8, "print squares and cubes");
+        printf("\n[%2d] %s", 9, "integer division");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -218,4 +219,25 @@ void task8() {
         int cube = square * i;
         printf("\n%10d %10d %10d", i, square, cube);
     }
+}
+
+/*
+ * 9. Даны целые положительные числа N и K.
+ * Используя только операции сложения и вычитания, найти
+ * частное от деления нацело N на K, а также остаток от этого деления.
+ */
+void task9() {
+    int n, k;
+    printf("please enter dividend and divisor: ");
+    scanf("%d %d", &n, &k);
+
+    int remainder = n;
+    int quotient = 0;
+    while (remainder >= k) {
+        quotient++;
+        remainder -= k;
+    }
+
+    printf("%-10s %3d\n", "quotient", quotient);
+    printf("%-10s %3d", "remainder", remainder);
 }
