@@ -249,4 +249,7 @@ void task9() {
  * Если имеются, то вывести True, если нет — вывести False.
  */
 void task10() {
+    int n;
+    printf("please enter an integer: ");
+    scanf("%d", &n);
 }
