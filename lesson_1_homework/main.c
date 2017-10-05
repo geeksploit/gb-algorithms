@@ -252,4 +252,8 @@ void task10() {
     int n;
     printf("please enter an integer: ");
     scanf("%d", &n);
+
+    while (n > 0) {
+        n /= 10;
+    }
 }
