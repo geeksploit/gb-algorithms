@@ -5,7 +5,8 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
+                              &task10};
 
     int choice = -1;
     do {
@@ -25,6 +26,7 @@ int main() {
         printf("\n[%2d] %s", 7, "match chess fields by color");
         printf("\n[%2d] %s", 8, "print squares and cubes");
         printf("\n[%2d] %s", 9, "integer division");
+        printf("\n[%2d] %s", 10, "detect odd digits");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
