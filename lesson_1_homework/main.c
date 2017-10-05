@@ -254,6 +254,8 @@ void task10() {
     scanf("%d", &n);
 
     while (n > 0) {
+        if ((n % 10) % 2) {
+        }
         n /= 10;
     }
 }
