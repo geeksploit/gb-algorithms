@@ -236,4 +236,7 @@ void task9() {
         quotient++;
         remainder -= k;
     }
+
+    printf("%-10s %3d\n", "quotient", quotient);
+    printf("%-10s %3d", "remainder", remainder);
 }
