@@ -231,7 +231,9 @@ void task9() {
     scanf("%d %d", &n, &k);
 
     int remainder = n;
+    int quotient = 0;
     while (remainder >= k) {
+        quotient++;
         remainder -= k;
     }
 }
