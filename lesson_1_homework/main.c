@@ -229,4 +229,9 @@ void task9() {
     int n, k;
     printf("please enter dividend and divisor: ");
     scanf("%d %d", &n, &k);
+
+    int remainder = n;
+    while (remainder >= k) {
+        remainder -= k;
+    }
 }
