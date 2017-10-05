@@ -260,4 +260,6 @@ void task10() {
         }
         n /= 10;
     }
+
+    printf("False");
 }
