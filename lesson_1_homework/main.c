@@ -226,4 +226,7 @@ void task8() {
  * частное от деления нацело N на K, а также остаток от этого деления.
  */
 void task9() {
+    int n, k;
+    printf("please enter dividend and divisor: ");
+    scanf("%d %d", &n, &k);
 }
