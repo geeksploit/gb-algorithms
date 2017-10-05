@@ -255,6 +255,8 @@ void task10() {
 
     while (n > 0) {
         if ((n % 10) % 2) {
+            printf("True");
+            return;
         }
         n /= 10;
     }
