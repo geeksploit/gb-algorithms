@@ -6,7 +6,7 @@
 int main() {
 
     void (*menu[])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
-                            &task10, &task11};
+                            &task10, &task11, &task12};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -29,6 +29,7 @@ int main() {
         printf("\n[%2d] %s", 9, "integer division");
         printf("\n[%2d] %s", 10, "detect odd digits");
         printf("\n[%2d] %s", 11, "count average of +..8");
+        printf("\n[%2d] %s", 12, "max of three");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
