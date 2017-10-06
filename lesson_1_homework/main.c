@@ -11,7 +11,7 @@ int main() {
 
     int choice = -1;
     do {
-        if (choice >= 0 && choice <= 14) {
+        if (choice >= 0 && choice < menuSize) {
             printf("\nTASK %d\n", choice);
             menu[choice]();
         }
