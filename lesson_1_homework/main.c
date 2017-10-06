@@ -322,4 +322,6 @@ void task13() {
     x ^= x << 13;
     x ^= x >> 17;
     x ^= x << 5;
+
+    int randomB = x % (to - from + 1) + from;
 }
