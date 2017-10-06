@@ -324,4 +324,5 @@ void task13() {
     x ^= x << 5;
 
     int randomB = x % (to - from + 1) + from;
+    printf("\nrandomB: %d", randomB);
 }
