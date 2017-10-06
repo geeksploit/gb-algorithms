@@ -339,5 +339,9 @@ void task14() {
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++) {
+        int divisor = 1;
+        for (int j = i; j > 0; j /= 10) {
+            divisor *= 10;
+        }
     }
 }
