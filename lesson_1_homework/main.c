@@ -337,4 +337,7 @@ void task14() {
     int n;
     printf("please enter the upper bound: ");
     scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+    }
 }
