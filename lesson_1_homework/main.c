@@ -7,7 +7,7 @@
 int main() {
 
     void (*menu[])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
-                            &task10, &task11, &task12, &task13};
+                            &task10, &task11, &task12, &task13, &task14};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -32,6 +32,7 @@ int main() {
         printf("\n[%2d] %s", 11, "count average of +..8");
         printf("\n[%2d] %s", 12, "max of three");
         printf("\n[%2d] %s", 13, "random number");
+        printf("\n[%2d] %s", 14, "automorphic numbers");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -326,4 +327,28 @@ void task13() {
 
     int randomB = x % (to - from + 1) + from;
     printf("\nrandomB: %d", randomB);
+}
+
+/*
+ * 14. *Автоморфные числа.
+ * Натуральное число называется автоморфным, если оно равно последним цифрам своего квадрата. Например, 25^2 = 625.
+ * Напишите программу, которая вводит натуральное число N и выводит на экран все автоморфные числа, не превосходящие N.
+ */
+void task14() {
+    int n;
+    printf("please enter the upper bound: ");
+    scanf("%d", &n);
+
+    for (int i = 1; i <= n; i++) {
+        int divisor = 1;
+        for (int j = i; j > 0; j /= 10) {
+            divisor *= 10;
+        }
+
+        int square = i * i;
+
+        if (i == square % divisor) {
+            printf("\nautomorphic number: %5d^2 = %d", i, square);
+        }
+    }
 }
