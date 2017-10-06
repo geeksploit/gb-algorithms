@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 #include "main.h"
 
 int main() {
 
     void (*menu[])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
-                            &task10, &task11, &task12};
+                            &task10, &task11, &task12, &task13};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -30,6 +31,7 @@ int main() {
         printf("\n[%2d] %s", 10, "detect odd digits");
         printf("\n[%2d] %s", 11, "count average of +..8");
         printf("\n[%2d] %s", 12, "max of three");
+        printf("\n[%2d] %s", 13, "random number");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -301,4 +303,27 @@ void task12() {
     max = max > c ? max : c;
 
     printf("the maximum is: %d", max);
+}
+
+/*
+ * 13. * Написать функцию, генерирующую случайное число от 1 до 100.
+ * а) с использованием стандартной функции rand()
+ * б) без использования стандартной функции rand()
+ */
+void task13() {
+    int from = 1;
+    int to = 100;
+
+    srand(time(NULL));
+    int randomA = rand() % (to - from + 1) + from;
+    printf("randomA: %d", randomA);
+
+    // This is the xorshift algorithm, which is simple yet efficient.
+    unsigned int x = time(NULL);
+    x ^= x << 13;
+    x ^= x >> 17;
+    x ^= x << 5;
+
+    int randomB = x % (to - from + 1) + from;
+    printf("\nrandomB: %d", randomB);
 }
