@@ -295,4 +295,6 @@ void task12() {
     int a, b, c;
     printf("please enter three integers: ");
     scanf("%d %d %d", &a, &b, &c);
+
+    int max = a > b ? a : b;
 }
