@@ -315,4 +315,5 @@ void task13() {
 
     srand(time(NULL));
     int randomA = rand() % (to - from + 1) + from;
+    printf("randomA: %d", randomA);
 }
