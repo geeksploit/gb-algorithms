@@ -275,5 +275,7 @@ void task11() {
     printf("please enter a sequence of numbers\n");
     printf("use 0 to terminate the sequence\n");
     while (scanf("%d", &nextNumber), nextNumber != 0) {
+        if (nextNumber > 0 && nextNumber % 10 == 8) {
+        }
     }
 }
