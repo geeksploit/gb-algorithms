@@ -316,4 +316,10 @@ void task13() {
     srand(time(NULL));
     int randomA = rand() % (to - from + 1) + from;
     printf("randomA: %d", randomA);
+
+    // This is the xorshift algorithm, which is simple yet efficient.
+    unsigned int x = time(NULL);
+    x ^= x << 13;
+    x ^= x >> 17;
+    x ^= x << 5;
 }
