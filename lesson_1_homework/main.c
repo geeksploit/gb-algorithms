@@ -298,4 +298,6 @@ void task12() {
 
     int max = a > b ? a : b;
     max = max > c ? max : c;
+
+    printf("the maximum is: %d", max);
 }
