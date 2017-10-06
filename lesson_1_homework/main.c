@@ -343,5 +343,7 @@ void task14() {
         for (int j = i; j > 0; j /= 10) {
             divisor *= 10;
         }
+
+        int square = i * i;
     }
 }
