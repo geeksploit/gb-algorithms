@@ -5,7 +5,8 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9};
+    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
+                              &task10};
 
     int choice = -1;
     do {
@@ -25,6 +26,7 @@ int main() {
         printf("\n[%2d] %s", 7, "match chess fields by color");
         printf("\n[%2d] %s", 8, "print squares and cubes");
         printf("\n[%2d] %s", 9, "integer division");
+        printf("\n[%2d] %s", 10, "detect odd digits");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -240,4 +242,26 @@ void task9() {
 
     printf("%-10s %3d\n", "quotient", quotient);
     printf("%-10s %3d", "remainder", remainder);
+}
+
+/*
+ * 10. Дано целое число N (> 0).
+ * С помощью операций деления нацело и взятия остатка от деления определить,
+ * имеются ли в записи числа N нечетные цифры.
+ * Если имеются, то вывести True, если нет — вывести False.
+ */
+void task10() {
+    int n;
+    printf("please enter an integer: ");
+    scanf("%d", &n);
+
+    while (n > 0) {
+        if ((n % 10) % 2) {
+            printf("True");
+            return;
+        }
+        n /= 10;
+    }
+
+    printf("False");
 }
