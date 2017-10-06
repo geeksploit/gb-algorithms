@@ -282,4 +282,5 @@ void task11() {
             count++;
         }
     }
+    float average = sum / count;
 }
