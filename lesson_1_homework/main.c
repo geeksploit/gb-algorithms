@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 #include "main.h"
 
 int main() {
@@ -311,4 +312,6 @@ void task12() {
 void task13() {
     int from = 1;
     int to = 100;
+
+    srand(time(NULL));
 }
