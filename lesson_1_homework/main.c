@@ -5,12 +5,13 @@
 
 int main() {
 
-    void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
-                              &task10, &task11};
+    void (*menu[])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
+                            &task10, &task11};
+    int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
     do {
-        if (choice >= 0 && choice <= 14) {
+        if (choice >= 0 && choice < menuSize) {
             printf("\nTASK %d\n", choice);
             menu[choice]();
         }
