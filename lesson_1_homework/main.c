@@ -271,12 +271,14 @@ void task10() {
  * Подсчитать среднее арифметическое всех положительных четных чисел, оканчивающихся на 8.
  */
 void task11() {
+    float sum = 0;
     int count = 0;
     int nextNumber;
     printf("please enter a sequence of numbers\n");
     printf("use 0 to terminate the sequence\n");
     while (scanf("%d", &nextNumber), nextNumber != 0) {
         if (nextNumber > 0 && nextNumber % 10 == 8) {
+            sum += nextNumber;
             count++;
         }
     }
