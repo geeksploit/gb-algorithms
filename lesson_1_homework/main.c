@@ -287,3 +287,9 @@ void task11() {
     float average = sum / count;
     printf("average is: %.3f", average);
 }
+
+/*
+ * 12. Написать функцию нахождения максимального из трех чисел.
+ */
+void task12() {
+}
