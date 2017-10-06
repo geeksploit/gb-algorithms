@@ -7,7 +7,7 @@
 int main() {
 
     void (*menu[])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
-                            &task10, &task11, &task12, &task13};
+                            &task10, &task11, &task12, &task13, &task14};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -32,6 +32,7 @@ int main() {
         printf("\n[%2d] %s", 11, "count average of +..8");
         printf("\n[%2d] %s", 12, "max of three");
         printf("\n[%2d] %s", 13, "random number");
+        printf("\n[%2d] %s", 14, "automorphic numbers");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
