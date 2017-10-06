@@ -6,7 +6,7 @@
 int main() {
 
     void (*menu[15])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
-                              &task10};
+                              &task10, &task11};
 
     int choice = -1;
     do {
@@ -27,6 +27,7 @@ int main() {
         printf("\n[%2d] %s", 8, "print squares and cubes");
         printf("\n[%2d] %s", 9, "integer division");
         printf("\n[%2d] %s", 10, "detect odd digits");
+        printf("\n[%2d] %s", 11, "count average of +..8");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -264,4 +265,24 @@ void task10() {
     }
 
     printf("False");
+}
+
+/*
+ * 11. С клавиатуры вводятся числа, пока не будет введен 0.
+ * Подсчитать среднее арифметическое всех положительных четных чисел, оканчивающихся на 8.
+ */
+void task11() {
+    float sum = 0;
+    int count = 0;
+    int nextNumber;
+    printf("please enter a sequence of numbers\n");
+    printf("use 0 to terminate the sequence\n");
+    while (scanf("%d", &nextNumber), nextNumber != 0) {
+        if (nextNumber > 0 && nextNumber % 10 == 8) {
+            sum += nextNumber;
+            count++;
+        }
+    }
+    float average = sum / count;
+    printf("average is: %.3f", average);
 }
