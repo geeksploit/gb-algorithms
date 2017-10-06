@@ -7,6 +7,7 @@ int main() {
 
     void (*menu[])(void) = {&task0, &task1, &task2, &task3, &task4, &task5, &task6, &task7, &task8, &task9,
                             &task10, &task11};
+    int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
     do {
