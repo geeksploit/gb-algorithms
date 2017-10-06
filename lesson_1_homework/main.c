@@ -314,4 +314,5 @@ void task13() {
     int to = 100;
 
     srand(time(NULL));
+    int randomA = rand() % (to - from + 1) + from;
 }
