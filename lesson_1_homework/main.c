@@ -345,5 +345,8 @@ void task14() {
         }
 
         int square = i * i;
+
+        if (i == square % divisor) {
+        }
     }
 }
