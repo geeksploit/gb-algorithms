@@ -347,6 +347,7 @@ void task14() {
         int square = i * i;
 
         if (i == square % divisor) {
+            printf("\nautomorphic number: %5d^2 = %d", i, square);
         }
     }
 }
