@@ -9,6 +9,7 @@ int main() {
     do {
         if (choice >= 0 && choice < menuSize) {
             printf("\nTASK %d\n", choice);
+            menu[choice]();
         }
         printf("\n\nMENU");
         printf("\nplease enter your choice to proceed:");
