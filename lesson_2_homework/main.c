@@ -36,4 +36,7 @@ void task1() {
 }
 
 long decimalToBinary(int decimal) {
+    if (decimal <= 0) {
+        return 0;
+    }
 }
