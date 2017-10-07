@@ -48,3 +48,12 @@ long decimalToBinary(int decimal) {
     binary += 10 * decimalToBinary(decimal / 2);
     return binary;
 }
+
+/*
+ * 2. Реализовать функцию возведения числа a в степень b:
+ * a. без рекурсии;
+ * b. рекурсивно;
+ * c. *рекурсивно, используя свойство чётности степени.
+ */
+void task2() {
+}
