@@ -108,5 +108,8 @@ int calculatorA(int number, int limit, int counter) {
     if (number == limit) {
         return counter + 1;
     }
+    if (number > limit) {
+        return 0;
+    }
     return counter;
 }
