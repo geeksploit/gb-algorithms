@@ -111,5 +111,6 @@ int calculatorA(int number, int limit, int counter) {
     if (number > limit) {
         return 0;
     }
+    counter += calculatorA(number + 1, limit, counter) + calculatorA(number * 2, limit, counter);
     return counter;
 }
