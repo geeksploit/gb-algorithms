@@ -102,6 +102,9 @@ long powerWithParity(int base, int exponent) {
  * б) с использованием рекурсии.
  */
 void task3() {
+    int from = 3;
+    int to = 20;
+    int count = 0;
 }
 
 int calculatorA(int number, int limit, int counter) {
