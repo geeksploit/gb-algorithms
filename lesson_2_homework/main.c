@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 int main() {
+    void (*menu[])(void) = {&task0};
+
     return 0;
 }
 
