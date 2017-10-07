@@ -28,3 +28,9 @@ void task0() {
     printf("thanks for staying with us, bye\n");
     exit(0);
 }
+
+/*
+ * 1. Реализовать функцию перевода из 10 системы в двоичную используя рекурсию.
+ */
+void task1() {
+}
