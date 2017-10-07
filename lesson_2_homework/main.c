@@ -69,5 +69,8 @@ void task2() {
 }
 
 long power(int base, int exponent) {
+    if (exponent == 0) {
+        return 1;
+    }
     return 1;
 }
