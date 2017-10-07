@@ -6,6 +6,8 @@ int main() {
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
+    do {
+    } while (scanf("%d", &choice));
 
     return 0;
 }
