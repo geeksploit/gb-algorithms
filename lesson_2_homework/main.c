@@ -81,4 +81,7 @@ long powerWithParity(int base, int exponent) {
     if (exponent == 0) {
         return 1;
     }
+    if (exponent % 2 == 0) {
+        return powerWithParity(base, exponent / 2) * powerWithParity(base, exponent / 2);
+    }
 }
