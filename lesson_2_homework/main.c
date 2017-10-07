@@ -33,6 +33,9 @@ void task0() {
  * 1. Реализовать функцию перевода из 10 системы в двоичную используя рекурсию.
  */
 void task1() {
+    int decimal;
+    printf("please enter a decimal number to convert: ");
+    scanf("%d", &decimal);
 }
 
 long decimalToBinary(int decimal) {
