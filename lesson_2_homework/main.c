@@ -36,6 +36,7 @@ void task1() {
     int decimal;
     printf("please enter a decimal number to convert: ");
     scanf("%d", &decimal);
+    printf("the given number in binary is: %ld", decimalToBinary(decimal));
 }
 
 long decimalToBinary(int decimal) {
