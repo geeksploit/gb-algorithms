@@ -7,6 +7,8 @@ int main() {
 
     int choice = -1;
     do {
+        if (choice >= 0 && choice < menuSize) {
+        }
         printf("\n\nMENU");
         printf("\nplease enter your choice to proceed:");
         printf("\n[%2d] %s", 0, "exit");
