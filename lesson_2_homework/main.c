@@ -39,4 +39,5 @@ long decimalToBinary(int decimal) {
     if (decimal <= 0) {
         return 0;
     }
+    long binary = decimal % 2;
 }
