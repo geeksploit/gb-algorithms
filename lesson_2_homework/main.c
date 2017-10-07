@@ -78,4 +78,7 @@ long power(int base, int exponent) {
 }
 
 long powerWithParity(int base, int exponent) {
+    if (exponent == 0) {
+        return 1;
+    }
 }
