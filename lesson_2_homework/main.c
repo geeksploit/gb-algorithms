@@ -61,4 +61,6 @@ void task2() {
     scanf("%d %d", &base, &exponent);
 
     int productA = 1;
+    for (int i = 0; i < exponent; i++) {
+    }
 }
