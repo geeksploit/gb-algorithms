@@ -62,5 +62,6 @@ void task2() {
 
     int productA = 1;
     for (int i = 0; i < exponent; i++) {
+        productA *= base;
     }
 }
