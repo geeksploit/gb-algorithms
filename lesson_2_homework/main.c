@@ -61,11 +61,11 @@ void task2() {
     printf("please enter the base and the exponent: ");
     scanf("%d %d", &base, &exponent);
 
-    int productA = 1;
+    long productA = 1;
     for (int i = 0; i < exponent; i++) {
         productA *= base;
     }
-    printf("%-20s: %d", "non-recursively", productA);
+    printf("%-20s: %ld", "non-recursively", productA);
 
     printf("\n%-20s: %ld", "recursively", power(base, exponent));
 }
