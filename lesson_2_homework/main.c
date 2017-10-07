@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main() {
     return 0;
@@ -9,4 +10,5 @@ int main() {
  */
 void task0() {
     printf("thanks for staying with us, bye\n");
+    exit(0);
 }
