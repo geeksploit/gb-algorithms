@@ -59,4 +59,6 @@ void task2() {
     int base, exponent;
     printf("please enter the base and the exponent: ");
     scanf("%d %d", &base, &exponent);
+
+    int productA = 1;
 }
