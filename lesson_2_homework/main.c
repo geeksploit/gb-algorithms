@@ -5,6 +5,8 @@ int main() {
     void (*menu[])(void) = {&task0};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
+    int choice = -1;
+
     return 0;
 }
 
