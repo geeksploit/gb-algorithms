@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include "main.h"
 
 int main() {
@@ -68,6 +69,7 @@ void task2() {
     printf("%-20s: %ld", "non-recursively", productA);
     printf("\n%-20s: %ld", "recursively", power(base, exponent));
     printf("\n%-20s: %ld", "with parity control", powerWithParity(base, exponent));
+    printf("\n%-20s: %.2f", "control value", pow(base, exponent));
 }
 
 long power(int base, int exponent) {
