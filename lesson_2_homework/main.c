@@ -76,3 +76,6 @@ long power(int base, int exponent) {
     }
     return base * power(base, exponent - 1);
 }
+
+long powerWithParity(int base, int exponent) {
+}
