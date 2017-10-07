@@ -64,4 +64,5 @@ void task2() {
     for (int i = 0; i < exponent; i++) {
         productA *= base;
     }
+    printf("%-20s: %d", "non-recursively", productA);
 }
