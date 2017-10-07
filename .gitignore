@@ -1,0 +1,13 @@
+## Intellij CLion
+.idea/
+*.ipr
+*.iws
+*.iml
+
+## CMake
+cmake-build-debug/
+CMakeLists.txt
+
+## OS Specific
+.DS_Store
+Thumbs.db
