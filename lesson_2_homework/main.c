@@ -103,3 +103,7 @@ long powerWithParity(int base, int exponent) {
  */
 void task3() {
 }
+
+int calculatorA(int number, int limit, int counter) {
+    return counter;
+}
