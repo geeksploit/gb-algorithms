@@ -34,3 +34,6 @@ void task0() {
  */
 void task1() {
 }
+
+long decimalToBinary(int decimal) {
+}
