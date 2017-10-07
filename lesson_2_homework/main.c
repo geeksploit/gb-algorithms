@@ -56,4 +56,7 @@ long decimalToBinary(int decimal) {
  * c. *рекурсивно, используя свойство чётности степени.
  */
 void task2() {
+    int base, exponent;
+    printf("please enter the base and the exponent: ");
+    scanf("%d %d", &base, &exponent);
 }
