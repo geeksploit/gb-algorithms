@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 int main() {
     return 0;
 }
@@ -6,4 +8,5 @@ int main() {
  * Exit the application.
  */
 void task0() {
+    printf("thanks for staying with us, bye\n");
 }
