@@ -45,6 +45,6 @@ long decimalToBinary(int decimal) {
         return 0;
     }
     long binary = decimal % 2;
-    binary += 10 * decimalToBinary(decimal / 10);
+    binary += 10 * decimalToBinary(decimal / 2);
     return binary;
 }
