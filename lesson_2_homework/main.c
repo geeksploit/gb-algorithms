@@ -7,6 +7,9 @@ int main() {
 
     int choice = -1;
     do {
+        printf("\n\nMENU");
+        printf("\nplease enter your choice to proceed:");
+        printf("\n> ");
     } while (scanf("%d", &choice));
 
     return 0;
