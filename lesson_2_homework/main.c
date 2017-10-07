@@ -66,6 +66,8 @@ void task2() {
         productA *= base;
     }
     printf("%-20s: %d", "non-recursively", productA);
+
+    printf("\n%-20s: %ld", "recursively", power(base, exponent));
 }
 
 long power(int base, int exponent) {
