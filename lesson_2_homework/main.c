@@ -3,7 +3,7 @@
 #include "main.h"
 
 int main() {
-    void (*menu[])(void) = {&task0};
+    void (*menu[])(void) = {&task0, &task1};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -15,6 +15,7 @@ int main() {
         printf("\n\nMENU");
         printf("\nplease enter your choice to proceed:");
         printf("\n[%2d] %s", 0, "exit");
+        printf("\n[%2d] %s", 1, "decimal to binary");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -27,4 +28,23 @@ int main() {
 void task0() {
     printf("thanks for staying with us, bye\n");
     exit(0);
+}
+
+/*
+ * 1. Реализовать функцию перевода из 10 системы в двоичную используя рекурсию.
+ */
+void task1() {
+    int decimal;
+    printf("please enter a decimal number to convert: ");
+    scanf("%d", &decimal);
+    printf("the given number in binary is: %ld", decimalToBinary(decimal));
+}
+
+long decimalToBinary(int decimal) {
+    if (decimal <= 0) {
+        return 0;
+    }
+    long binary = decimal % 2;
+    binary += 10 * decimalToBinary(decimal / 2);
+    return binary;
 }
