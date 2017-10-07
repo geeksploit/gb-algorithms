@@ -3,6 +3,7 @@
 
 int main() {
     void (*menu[])(void) = {&task0};
+    int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     return 0;
 }
