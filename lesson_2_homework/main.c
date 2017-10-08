@@ -155,6 +155,8 @@ void task4() {
     scanf("%d", &choice);
 
     if (choice == 1) {
+        const char *filename = "../array.txt";
+        const char *mode = "r";
     } else if (choice == 2) {
         size_t size;
         printf("please enter the size of the array: ");
