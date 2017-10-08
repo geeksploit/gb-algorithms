@@ -130,13 +130,13 @@ int calculatorA(int startFrom, int endWith, int increment, int multiplier) {
     return result;
 }
 
-int calculatorB(int number, int limit, int increment, int multiplier) {
-    if (number == limit) {
+int calculatorB(int startWith, int endWith, int increment, int multiplier) {
+    if (startWith == endWith) {
         return 1;
     }
-    if (number > limit) {
+    if (startWith > endWith) {
         return 0;
     }
-    return calculatorB(number + increment, limit, increment, multiplier)
-           + calculatorB(number * multiplier, limit, increment, multiplier);
+    return calculatorB(startWith + increment, endWith, increment, multiplier)
+           + calculatorB(startWith * multiplier, endWith, increment, multiplier);
 }
