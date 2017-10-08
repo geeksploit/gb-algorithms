@@ -105,20 +105,22 @@ long powerWithParity(int base, int exponent) {
 void task3() {
     int from = 3;
     int to = 20;
-    printf("there are %d ways to get from %d to %d", calculatorA(from, to), from, to);
-    printf("\nthere are %d ways to get from %d to %d", calculatorB(from, to), from, to);
+    int increaseBy = 1;
+    int multiplyBy = 2;
+    printf("there are %d ways to get from %d to %d", calculatorA(from, to, increaseBy, multiplyBy), from, to);
+    printf("\nthere are %d ways to get from %d to %d", calculatorB(from, to, increaseBy, multiplyBy), from, to);
 }
 
-int calculatorA(int startFrom, int endWith) {
+int calculatorA(int startFrom, int endWith, int increment, int multiplier) {
     int *pathsTo = (int *)calloc(endWith + 1, sizeof(int *));
     pathsTo[startFrom] = 1;
 
     for (int i = startFrom; i <= endWith; i++) {
-        if (i % 2 == 0) {
-            pathsTo[i] += pathsTo[i / 2];
+        if (i % multiplier == 0) {
+            pathsTo[i] += pathsTo[i / multiplier];
         }
-        if (i - 1 != 0) {
-            pathsTo[i] += pathsTo[i - 1];
+        if (i - increment != 0) {
+            pathsTo[i] += pathsTo[i - increment];
         }
     }
 
@@ -128,12 +130,13 @@ int calculatorA(int startFrom, int endWith) {
     return result;
 }
 
-int calculatorB(int number, int limit) {
-    if (number == limit) {
+int calculatorB(int startWith, int endWith, int increment, int multiplier) {
+    if (startWith == endWith) {
         return 1;
     }
-    if (number > limit) {
+    if (startWith > endWith) {
         return 0;
     }
-    return calculatorB(number + 1, limit) + calculatorB(number * 2, limit);
+    return calculatorB(startWith + increment, endWith, increment, multiplier)
+           + calculatorB(startWith * multiplier, endWith, increment, multiplier);
 }
