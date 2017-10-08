@@ -169,6 +169,8 @@ void task4() {
         }
         fclose(file);
 
+        printf("%s:\n", filename);
+
         free(arr);
     } else if (choice == 2) {
         size_t size;
