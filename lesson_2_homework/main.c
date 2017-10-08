@@ -1,11 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <mem.h>
 #include "main.h"
 
 int main() {
-    void (*menu[])(void) = {&task0, &task1, &task2, &task3};
+    void (*menu[])(void) = {&task0, &task1, &task2, &task3, &task4};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -20,6 +19,7 @@ int main() {
         printf("\n[%2d] %s", 1, "decimal to binary");
         printf("\n[%2d] %s", 2, "a pow b");
         printf("\n[%2d] %s", 3, "calculator");
+        printf("\n[%2d] %s", 4, "fill the array");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -112,14 +112,14 @@ void task3() {
 }
 
 int calculatorA(int startFrom, int endWith, int increment, int multiplier) {
-    int *pathsTo = (int *)calloc(endWith + 1, sizeof(int *));
+    int *pathsTo = (int *) calloc(endWith + 1, sizeof(int *));
     pathsTo[startFrom] = 1;
 
     for (int i = startFrom; i <= endWith; i++) {
         if (i % multiplier == 0) {
             pathsTo[i] += pathsTo[i / multiplier];
         }
-        if (i - increment != 0) {
+        if (i - increment > 0) {
             pathsTo[i] += pathsTo[i - increment];
         }
     }
@@ -139,4 +139,37 @@ int calculatorB(int startWith, int endWith, int increment, int multiplier) {
     }
     return calculatorB(startWith + increment, endWith, increment, multiplier)
            + calculatorB(startWith * multiplier, endWith, increment, multiplier);
+}
+
+/*
+ * 4. Реализовать меню с выбором способа заполнения массива: из файла, случайными числами, с клавиатуры.
+ */
+void task4() {
+    int choice;
+    printf("how would you like to fill the array?");
+    printf("\n1) from a file");
+    printf("\n2) with random values");
+    printf("\n3) from the keyboard");
+    printf("\n>");
+    scanf("%d", &choice);
+
+    if (choice == 1) {
+    } else if (choice == 2) {
+    } else if (choice == 3) {
+        int size;
+        printf("please enter the size of the array: ");
+        scanf("%d", &size);
+
+        int *array = (int *) malloc(size * sizeof(int));
+
+        for (int i = 0; i < size; i++) {
+            scanf("%d", &array[i]);
+        }
+
+        for (int i = 0; i < size; i++) {
+            printf("%d:[%d] ", i, array[i]);
+        }
+
+        free(array);
+    }
 }
