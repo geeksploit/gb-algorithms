@@ -137,6 +137,6 @@ int calculatorB(int number, int limit, int increment, int multiplier) {
     if (number > limit) {
         return 0;
     }
-    return calculatorB(number + 1, limit, increment, multiplier)
+    return calculatorB(number + increment, limit, increment, multiplier)
            + calculatorB(number * multiplier, limit, increment, multiplier);
 }
