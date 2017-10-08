@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <mem.h>
 #include "main.h"
 
 int main() {
@@ -112,14 +111,14 @@ void task3() {
 }
 
 int calculatorA(int startFrom, int endWith, int increment, int multiplier) {
-    int *pathsTo = (int *)calloc(endWith + 1, sizeof(int *));
+    int *pathsTo = (int *) calloc(endWith + 1, sizeof(int *));
     pathsTo[startFrom] = 1;
 
     for (int i = startFrom; i <= endWith; i++) {
         if (i % multiplier == 0) {
             pathsTo[i] += pathsTo[i / multiplier];
         }
-        if (i - increment != 0) {
+        if (i - increment > 0) {
             pathsTo[i] += pathsTo[i - increment];
         }
     }
@@ -139,4 +138,10 @@ int calculatorB(int startWith, int endWith, int increment, int multiplier) {
     }
     return calculatorB(startWith + increment, endWith, increment, multiplier)
            + calculatorB(startWith * multiplier, endWith, increment, multiplier);
+}
+
+/*
+ * 4. Реализовать меню с выбором способа заполнения массива: из файла, случайными числами, с клавиатуры.
+ */
+void task4() {
 }

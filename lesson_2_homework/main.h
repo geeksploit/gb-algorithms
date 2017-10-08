@@ -9,6 +9,8 @@ void task2();
 
 void task3();
 
+void task4();
+
 long decimalToBinary(int decimal);
 
 long power(int base, int exponent);
