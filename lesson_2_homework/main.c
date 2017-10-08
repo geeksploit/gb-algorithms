@@ -160,7 +160,7 @@ void task4() {
         printf("please enter the size of the array: ");
         scanf("%d", &size);
 
-        int *array = (int *) malloc(size);
+        int *array = (int *) malloc(size * sizeof(int));
 
         for (int i = 0; i < size; i++) {
             scanf("%d", &array[i]);
