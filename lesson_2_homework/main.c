@@ -110,6 +110,7 @@ void task3() {
 }
 
 int calculatorA(int startFrom, int endWith) {
+    int *pathsTo = (int *)calloc(endWith + 1, sizeof(int *));
 }
 
 int calculatorB(int number, int limit, int counter) {
