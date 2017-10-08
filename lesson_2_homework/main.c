@@ -159,6 +159,9 @@ void task4() {
         const char *mode = "r";
         FILE *file = fopen(filename, mode);
 
+        int size;
+        fscanf(file, "%d", &size);
+
         fclose(file);
     } else if (choice == 2) {
         size_t size;
