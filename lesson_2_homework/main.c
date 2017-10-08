@@ -108,7 +108,7 @@ void task3() {
     int increaseBy = 1;
     int multiplyBy = 2;
     printf("there are %d ways to get from %d to %d", calculatorA(from, to, increaseBy, multiplyBy), from, to);
-    printf("\nthere are %d ways to get from %d to %d", calculatorB(from, to), from, to);
+    printf("\nthere are %d ways to get from %d to %d", calculatorB(from, to, increaseBy, multiplyBy), from, to);
 }
 
 int calculatorA(int startFrom, int endWith, int increment, int multiplier) {
@@ -130,12 +130,13 @@ int calculatorA(int startFrom, int endWith, int increment, int multiplier) {
     return result;
 }
 
-int calculatorB(int number, int limit) {
+int calculatorB(int number, int limit, int increment, int multiplier) {
     if (number == limit) {
         return 1;
     }
     if (number > limit) {
         return 0;
     }
-    return calculatorB(number + 1, limit) + calculatorB(number * 2, limit);
+    return calculatorB(number + 1, limit, increment, multiplier)
+           + calculatorB(number * 2, limit, increment, multiplier);
 }
