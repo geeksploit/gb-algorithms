@@ -158,6 +158,10 @@ void task4() {
         size_t size;
         printf("please enter the size of the array: ");
         scanf("%d", &size);
+
+        int *array = (int *) malloc(size * sizeof(int));
+
+        free(array);
     } else if (choice == 3) {
         int size;
         printf("please enter the size of the array: ");
