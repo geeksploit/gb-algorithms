@@ -166,6 +166,10 @@ void task4() {
             scanf("%d", &array[i]);
         }
 
+        for (int i = 0; i < size; i++) {
+            printf("%d:[%d] ", i, array[i]);
+        }
+
         free(array);
     }
 }
