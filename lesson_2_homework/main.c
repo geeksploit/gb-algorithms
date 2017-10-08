@@ -118,6 +118,7 @@ int calculatorA(int startFrom, int endWith) {
             pathsTo[i] += pathsTo[i / 2];
         }
         if (i - 1 != 0) {
+            pathsTo[i] += pathsTo[i - 1];
         }
     }
 
