@@ -163,6 +163,7 @@ void task4() {
         int *array = (int *) malloc(size);
 
         for (int i = 0; i < size; i++) {
+            scanf("%d", &array[i]);
         }
 
         free(array);
