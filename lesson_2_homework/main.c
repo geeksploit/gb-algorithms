@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <mem.h>
 #include "main.h"
 
 int main() {
@@ -104,17 +105,35 @@ long powerWithParity(int base, int exponent) {
 void task3() {
     int from = 3;
     int to = 20;
-    int count = 0;
-    printf("there are %d ways to get from %d to %d", calculatorB(from, to, count), from, to);
+    printf("there are %d ways to get from %d to %d", calculatorA(from, to), from, to);
+    printf("\nthere are %d ways to get from %d to %d", calculatorB(from, to), from, to);
 }
 
-int calculatorB(int number, int limit, int counter) {
+int calculatorA(int startFrom, int endWith) {
+    int *pathsTo = (int *)calloc(endWith + 1, sizeof(int *));
+    pathsTo[startFrom] = 1;
+
+    for (int i = startFrom; i <= endWith; i++) {
+        if (i % 2 == 0) {
+            pathsTo[i] += pathsTo[i / 2];
+        }
+        if (i - 1 != 0) {
+            pathsTo[i] += pathsTo[i - 1];
+        }
+    }
+
+    int result = pathsTo[endWith];
+    free(pathsTo);
+
+    return result;
+}
+
+int calculatorB(int number, int limit) {
     if (number == limit) {
-        return counter + 1;
+        return 1;
     }
     if (number > limit) {
         return 0;
     }
-    counter += calculatorB(number + 1, limit, counter) + calculatorB(number * 2, limit, counter);
-    return counter;
+    return calculatorB(number + 1, limit) + calculatorB(number * 2, limit);
 }
