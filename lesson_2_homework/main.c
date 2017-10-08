@@ -144,4 +144,11 @@ int calculatorB(int startWith, int endWith, int increment, int multiplier) {
  * 4. Реализовать меню с выбором способа заполнения массива: из файла, случайными числами, с клавиатуры.
  */
 void task4() {
+    int choice;
+    printf("how would you like to fill the array?");
+    printf("\n1) from a file");
+    printf("\n2) with random values");
+    printf("\n3) from the keyboard");
+    printf("\n>");
+    scanf("%d", &choice);
 }
