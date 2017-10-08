@@ -114,6 +114,8 @@ int calculatorA(int startFrom, int endWith) {
     pathsTo[startFrom] = 1;
 
     int result = pathsTo[endWith];
+
+    return result;
 }
 
 int calculatorB(int number, int limit, int counter) {
