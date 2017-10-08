@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <time.h>
 #include "main.h"
 
 int main() {
@@ -155,6 +156,19 @@ void task4() {
 
     if (choice == 1) {
     } else if (choice == 2) {
+        size_t size;
+        printf("please enter the size of the array: ");
+        scanf("%d", &size);
+
+        int *array = (int *) malloc(size * sizeof(int));
+
+        srand((unsigned) time(NULL));
+        for (int i = 0; i < size; i++) {
+            array[i] = rand();
+            printf("%d:[%d] ", i, array[i]);
+        }
+
+        free(array);
     } else if (choice == 3) {
         int size;
         printf("please enter the size of the array: ");
