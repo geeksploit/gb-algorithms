@@ -114,6 +114,8 @@ int calculatorA(int startFrom, int endWith) {
     pathsTo[startFrom] = 1;
 
     for (int i = startFrom; i <= endWith; i++) {
+        if (i % 2 == 0) {
+        }
     }
 
     int result = pathsTo[endWith];
