@@ -155,6 +155,9 @@ void task4() {
 
     if (choice == 1) {
     } else if (choice == 2) {
+        size_t size;
+        printf("please enter the size of the array: ");
+        scanf("%d", &size);
     } else if (choice == 3) {
         int size;
         printf("please enter the size of the array: ");
