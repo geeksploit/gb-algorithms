@@ -159,5 +159,9 @@ void task4() {
         int size;
         printf("please enter the size of the array: ");
         scanf("%d", &size);
+
+        int *array = (int *) malloc(size);
+
+        free(array);
     }
 }
