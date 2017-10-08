@@ -138,5 +138,5 @@ int calculatorB(int number, int limit, int increment, int multiplier) {
         return 0;
     }
     return calculatorB(number + 1, limit, increment, multiplier)
-           + calculatorB(number * 2, limit, increment, multiplier);
+           + calculatorB(number * multiplier, limit, increment, multiplier);
 }
