@@ -106,7 +106,8 @@ void task3() {
     int from = 3;
     int to = 20;
     int count = 0;
-    printf("there are %d ways to get from %d to %d", calculatorB(from, to, count), from, to);
+    printf("there are %d ways to get from %d to %d", calculatorA(from, to), from, to);
+    printf("\nthere are %d ways to get from %d to %d", calculatorB(from, to, count), from, to);
 }
 
 int calculatorA(int startFrom, int endWith) {
