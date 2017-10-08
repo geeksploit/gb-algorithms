@@ -15,6 +15,6 @@ long power(int base, int exponent);
 
 long powerWithParity(int base, int exponent);
 
-int calculatorA(int number, int limit, int counter);
+int calculatorB(int number, int limit, int counter);
 
 #endif //LESSON_2_HOMEWORK_MAIN_H
