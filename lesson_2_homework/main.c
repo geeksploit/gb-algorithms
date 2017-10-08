@@ -155,6 +155,25 @@ void task4() {
     scanf("%d", &choice);
 
     if (choice == 1) {
+        const char *filename = "../array.txt";
+        const char *mode = "r";
+        FILE *file = fopen(filename, mode);
+
+        int size;
+        fscanf(file, "%d", &size);
+
+        int *arr = (int *) malloc(size * sizeof(int));
+
+        for (int i = 0; i < size; i++) {
+            fscanf(file, "%d", &arr[i]);
+        }
+        fclose(file);
+
+        printf("%s:\n", filename);
+        for (int i = 0; i < size; i++) {
+            printf("%d:[%d] ", i, arr[i]);
+        }
+        free(arr);
     } else if (choice == 2) {
         size_t size;
         printf("please enter the size of the array: ");
