@@ -161,6 +161,9 @@ void task4() {
 
         int *array = (int *) malloc(size * sizeof(int));
 
+        for (int i = 0; i < size; i++) {
+        }
+
         free(array);
     } else if (choice == 3) {
         int size;
