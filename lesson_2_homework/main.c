@@ -157,6 +157,9 @@ void task4() {
     if (choice == 1) {
         const char *filename = "../array.txt";
         const char *mode = "r";
+        FILE *file = fopen(filename, mode);
+
+        fclose(file);
     } else if (choice == 2) {
         size_t size;
         printf("please enter the size of the array: ");
