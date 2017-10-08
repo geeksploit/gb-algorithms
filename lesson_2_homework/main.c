@@ -107,11 +107,11 @@ void task3() {
     int to = 20;
     int increaseBy = 1;
     int multiplyBy = 2;
-    printf("there are %d ways to get from %d to %d", calculatorA(from, to), from, to);
+    printf("there are %d ways to get from %d to %d", calculatorA(from, to, increaseBy, multiplyBy), from, to);
     printf("\nthere are %d ways to get from %d to %d", calculatorB(from, to), from, to);
 }
 
-int calculatorA(int startFrom, int endWith) {
+int calculatorA(int startFrom, int endWith, int increment, int multiplier) {
     int *pathsTo = (int *)calloc(endWith + 1, sizeof(int *));
     pathsTo[startFrom] = 1;
 
