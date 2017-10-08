@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <mem.h>
 #include "main.h"
 
 int main() {
@@ -106,6 +107,9 @@ void task3() {
     int to = 20;
     int count = 0;
     printf("there are %d ways to get from %d to %d", calculatorB(from, to, count), from, to);
+}
+
+int calculatorA(int startFrom, int endWith) {
 }
 
 int calculatorB(int number, int limit, int counter) {
