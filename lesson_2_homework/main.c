@@ -136,6 +136,5 @@ int calculatorB(int number, int limit, int counter) {
     if (number > limit) {
         return 0;
     }
-    counter += calculatorB(number + 1, limit, counter) + calculatorB(number * 2, limit, counter);
-    return counter;
+    return calculatorB(number + 1, limit, counter) + calculatorB(number * 2, limit, counter);
 }
