@@ -162,7 +162,11 @@ void task4() {
         int size;
         fscanf(file, "%d", &size);
 
+        int *arr = (int *) malloc(size * sizeof(int));
+
         fclose(file);
+
+        free(arr);
     } else if (choice == 2) {
         size_t size;
         printf("please enter the size of the array: ");
