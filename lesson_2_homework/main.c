@@ -170,7 +170,8 @@ void task4() {
         fclose(file);
 
         printf("%s:\n", filename);
-
+        for (int i = 0; i < size; i++) {
+        }
         free(arr);
     } else if (choice == 2) {
         size_t size;
