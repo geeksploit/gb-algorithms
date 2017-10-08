@@ -151,4 +151,9 @@ void task4() {
     printf("\n3) from the keyboard");
     printf("\n>");
     scanf("%d", &choice);
+
+    if (choice == 1) {
+    } else if (choice == 2) {
+    } else if (choice == 3) {
+    }
 }
