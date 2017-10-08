@@ -4,7 +4,7 @@
 #include "main.h"
 
 int main() {
-    void (*menu[])(void) = {&task0, &task1, &task2};
+    void (*menu[])(void) = {&task0, &task1, &task2, &task3};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -18,6 +18,7 @@ int main() {
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "decimal to binary");
         printf("\n[%2d] %s", 2, "a pow b");
+        printf("\n[%2d] %s", 3, "calculator");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -88,4 +89,32 @@ long powerWithParity(int base, int exponent) {
         return powerWithParity(base, exponent / 2) * powerWithParity(base, exponent / 2);
     }
     return base * powerWithParity(base, exponent - 1);
+}
+
+/*
+ * 3. Исполнитель Калькулятор преобразует целое число, записанное на экране.
+ * У исполнителя две команды, каждой команде присвоен номер:
+ * Прибавь 1
+ * Умножь на 2
+ * Первая команда увеличивает число на экране на 1, вторая увеличивает это число в 2 раза.
+ * Сколько существует программ, которые число 3 преобразуют в число 20.
+ * а) с использованием массива;
+ * б) с использованием рекурсии.
+ */
+void task3() {
+    int from = 3;
+    int to = 20;
+    int count = 0;
+    printf("there are %d ways to get from %d to %d", calculatorB(from, to, count), from, to);
+}
+
+int calculatorB(int number, int limit, int counter) {
+    if (number == limit) {
+        return counter + 1;
+    }
+    if (number > limit) {
+        return 0;
+    }
+    counter += calculatorB(number + 1, limit, counter) + calculatorB(number * 2, limit, counter);
+    return counter;
 }
