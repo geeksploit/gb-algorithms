@@ -113,6 +113,9 @@ int calculatorA(int startFrom, int endWith) {
     int *pathsTo = (int *)calloc(endWith + 1, sizeof(int *));
     pathsTo[startFrom] = 1;
 
+    for (int i = startFrom; i <= endWith; i++) {
+    }
+
     int result = pathsTo[endWith];
     free(pathsTo);
 
