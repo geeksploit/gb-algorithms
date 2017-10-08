@@ -105,6 +105,8 @@ long powerWithParity(int base, int exponent) {
 void task3() {
     int from = 3;
     int to = 20;
+    int increaseBy = 1;
+    int multiplyBy = 2;
     printf("there are %d ways to get from %d to %d", calculatorA(from, to), from, to);
     printf("\nthere are %d ways to get from %d to %d", calculatorB(from, to), from, to);
 }
