@@ -17,6 +17,8 @@ int bubbleSortOptimizedCheckSort(int *array, size_t size);
 
 int bubbleSortOptimizedMinusICheckSort(int *array, size_t size);
 
+int bubbleSortOptimizedTillLastCheckSort(int *array, size_t size);
+
 void printArray(int *array, size_t size);
 
 void swap(int *a, int *b);
