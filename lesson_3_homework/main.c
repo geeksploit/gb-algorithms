@@ -74,6 +74,7 @@ int bubbleSortOptimizedMinusI(int *array, size_t size) {
         for (int j = 0; j < size - 1 - i; j++) {
             counter++;
             if (array[j] > array[j + 1]) {
+                swap(&array[j], &array[j + 1]);
             }
         }
     }
