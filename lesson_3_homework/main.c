@@ -49,6 +49,10 @@ void task1() {
     int *arrB = (int *)malloc(size * sizeof(int));
 }
 
+int bubbleSortClassic(int *array, size_t size) {
+    return 0;
+}
+
 //<editor-fold desc="Utility functions">
 
 void copyArray(int *arrA, int *arrB, size_t size) {
