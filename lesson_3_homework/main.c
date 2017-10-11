@@ -32,4 +32,7 @@ void task0() {
 
 //<editor-fold desc="Utility functions">
 
+void copyArray(int *arrA, int *arrB, size_t size) {
+}
+
 //</editor-fold>
