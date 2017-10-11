@@ -157,6 +157,7 @@ int bubbleSortOptimizedTillLastCheckSort(int *array, size_t size) {
         int currentSwap = -1;
         int isSorted = 1;
         for (int j = 0; j < lastSwap; j++) {
+            counter++;
         }
     }
     return counter;
