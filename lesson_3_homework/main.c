@@ -46,6 +46,7 @@ void task1() {
     printArray(arrA, size);
 
     printf("\nthe amount of operations to perform bubble sort:");
+    int *arrB = (int *)malloc(size * sizeof(int));
 }
 
 //<editor-fold desc="Utility functions">
