@@ -44,6 +44,8 @@ void task1() {
         arrA[i] = rand() % size;
     }
     printArray(arrA, size);
+
+    printf("\nthe amount of operations to perform bubble sort:");
 }
 
 //<editor-fold desc="Utility functions">
