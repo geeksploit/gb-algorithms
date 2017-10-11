@@ -55,6 +55,10 @@ void task1() {
     copyArray(arrA, arrB, size);
     printf("\n%-12s: %d\t", "minus i", bubbleSortOptimizedMinusI(arrB, size));
     printArray(arrB, size);
+
+    copyArray(arrA, arrB, size);
+    printf("\n%-12s: %d\t", "till last", bubbleSortOptimizedTillLast(arrB, size));
+    printArray(arrB, size);
 }
 
 int bubbleSortClassic(int *array, size_t size) {
@@ -81,6 +85,23 @@ int bubbleSortOptimizedMinusI(int *array, size_t size) {
                 swap(&array[j], &array[j + 1]);
             }
         }
+    }
+    return counter;
+}
+
+int bubbleSortOptimizedTillLast(int *array, size_t size) {
+    int counter = 0;
+    int lastSwap = size - 1;
+    for (int i = 0; i < size; i++) {
+        int currentSwap = -1;
+        for (int j = 0; j < lastSwap; j++) {
+            counter++;
+            if (array[j] > array[j + 1]) {
+                swap(&array[j], &array[j + 1]);
+                currentSwap = j;
+            }
+        }
+        lastSwap = currentSwap;
     }
     return counter;
 }
