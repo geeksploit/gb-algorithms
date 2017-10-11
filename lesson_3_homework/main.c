@@ -134,6 +134,8 @@ int bubbleSortOptimizedMinusICheckSort(int *array, size_t size) {
         int isSorted = 1;
         for (int j = 0; j < size - 1 - i; j++) {
             counter++;
+            if (array[j] > array[j + 1]) {
+            }
         }
     }
     return counter;
