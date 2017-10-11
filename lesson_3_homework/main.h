@@ -13,6 +13,8 @@ int bubbleSortOptimizedTillLast(int *array, size_t size);
 
 void copyArray(int *arrA, int *arrB, size_t size);
 
+int bubbleSortOptimizedCheckSort(int *array, size_t size);
+
 void printArray(int *array, size_t size);
 
 void swap(int *a, int *b);
