@@ -38,6 +38,8 @@ void task0() {
 void task1() {
     srand(time(NULL));
     const size_t size = 10;
+
+    int *arrA = (int *)malloc(size * sizeof(int));
 }
 
 //<editor-fold desc="Utility functions">
