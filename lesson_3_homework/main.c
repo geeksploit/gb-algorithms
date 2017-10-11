@@ -49,6 +49,7 @@ void task1() {
     int *arrB = (int *)malloc(size * sizeof(int));
 
     copyArray(arrA, arrB, size);
+    printf("\n%-12s: %d\t", "classic", bubbleSortClassic(arrB, size));
 }
 
 int bubbleSortClassic(int *array, size_t size) {
