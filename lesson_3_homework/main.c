@@ -34,6 +34,7 @@ void task0() {
 
 void copyArray(int *arrA, int *arrB, size_t size) {
     for (int i = 0; i < size; i++) {
+        arrB[i] = arrA[i];
     }
 }
 
