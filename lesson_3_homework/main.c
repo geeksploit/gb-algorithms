@@ -40,6 +40,8 @@ void task1() {
     const size_t size = 10;
 
     int *arrA = (int *)malloc(size * sizeof(int));
+    for (int i = 0; i < size; i++) {
+    }
 }
 
 //<editor-fold desc="Utility functions">
