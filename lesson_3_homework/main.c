@@ -97,6 +97,7 @@ int bubbleSortOptimizedTillLast(int *array, size_t size) {
                 currentSwap = j;
             }
         }
+        lastSwap = currentSwap;
     }
     return counter;
 }
