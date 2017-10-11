@@ -38,4 +38,7 @@ void copyArray(int *arrA, int *arrB, size_t size) {
     }
 }
 
+void printArray(int *array, size_t size) {
+}
+
 //</editor-fold>
