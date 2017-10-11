@@ -50,7 +50,8 @@ void task1() {
 }
 
 int bubbleSortClassic(int *array, size_t size) {
-    return 0;
+    int counter = 0;
+    return counter;
 }
 
 //<editor-fold desc="Utility functions">
