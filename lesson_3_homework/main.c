@@ -47,6 +47,8 @@ void task1() {
 
     printf("\nthe amount of operations to perform bubble sort:");
     int *arrB = (int *)malloc(size * sizeof(int));
+
+    copyArray(arrA, arrB, size);
 }
 
 int bubbleSortClassic(int *array, size_t size) {
