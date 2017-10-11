@@ -41,6 +41,7 @@ void task1() {
 
     int *arrA = (int *)malloc(size * sizeof(int));
     for (int i = 0; i < size; i++) {
+        arrA[i] = rand() % size;
     }
 }
 
