@@ -62,6 +62,7 @@ void task1() {
 
     copyArray(arrA, arrB, size);
     printf("\n%-12s: %d\t", "check sort", bubbleSortOptimizedCheckSort(arrB, size));
+    printArray(arrB, size);
 }
 
 int bubbleSortClassic(int *array, size_t size) {
