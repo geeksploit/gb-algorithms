@@ -43,6 +43,7 @@ void task1() {
     for (int i = 0; i < size; i++) {
         arrA[i] = rand() % size;
     }
+    printArray(arrA, size);
 }
 
 //<editor-fold desc="Utility functions">
