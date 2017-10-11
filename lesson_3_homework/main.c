@@ -128,6 +128,11 @@ int bubbleSortOptimizedCheckSort(int *array, size_t size) {
     return counter;
 }
 
+int bubbleSortOptimizedMinusICheckSort(int *array, size_t size) {
+    int counter = 0;
+    return counter;
+}
+
 //<editor-fold desc="Utility functions">
 
 void copyArray(int *arrA, int *arrB, size_t size) {
