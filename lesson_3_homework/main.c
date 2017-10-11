@@ -167,6 +167,7 @@ int bubbleSortOptimizedTillLastCheckSort(int *array, size_t size) {
         if (isSorted) {
             return counter;
         }
+        lastSwap = currentSwap;
     }
     return counter;
 }
