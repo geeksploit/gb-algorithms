@@ -91,6 +91,7 @@ int bubbleSortOptimizedTillLast(int *array, size_t size) {
     for (int i = 0; i < size; i++) {
         int currentSwap = -1;
         for (int j = 0; j < lastSwap; j++) {
+            counter++;
         }
     }
     return counter;
