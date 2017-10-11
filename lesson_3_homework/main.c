@@ -139,6 +139,9 @@ int bubbleSortOptimizedMinusICheckSort(int *array, size_t size) {
                 isSorted = 0;
             }
         }
+        if (isSorted) {
+            return counter;
+        }
     }
     return counter;
 }
