@@ -36,6 +36,7 @@ void task0() {
  * Написать функции сортировки, которые возвращают количество операций.
  */
 void task1() {
+    srand(time(NULL));
 }
 
 //<editor-fold desc="Utility functions">
