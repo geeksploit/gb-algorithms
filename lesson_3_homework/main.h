@@ -1,0 +1,6 @@
+#ifndef LESSON_3_HOMEWORK_MAIN_H_H
+#define LESSON_3_HOMEWORK_MAIN_H_H
+
+void task0();
+
+#endif //LESSON_3_HOMEWORK_MAIN_H_H
