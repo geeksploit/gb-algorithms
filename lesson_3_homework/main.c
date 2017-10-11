@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 #include "main.h"
 
 int main() {
@@ -28,3 +29,25 @@ void task0() {
     printf("thanks for staying with us, bye\n");
     exit(0);
 }
+
+//<editor-fold desc="Utility functions">
+
+void copyArray(int *arrA, int *arrB, size_t size) {
+    for (int i = 0; i < size; i++) {
+        arrB[i] = arrA[i];
+    }
+}
+
+void printArray(int *array, size_t size) {
+    for (int i = 0; i < size; i++) {
+        printf("%d ", array[i]);
+    }
+}
+
+void swap(int *a, int *b) {
+    int t = *a;
+    *a = *b;
+    *b = t;
+}
+
+//</editor-fold>
