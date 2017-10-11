@@ -45,6 +45,7 @@ void printArray(int *array, size_t size) {
 }
 
 void swap(int *a, int *b) {
+    int t = *a;
 }
 
 //</editor-fold>
