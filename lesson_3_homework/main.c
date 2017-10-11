@@ -39,14 +39,14 @@ void task1() {
     srand(time(NULL));
     const size_t size = 10;
 
-    int *arrA = (int *)malloc(size * sizeof(int));
+    int *arrA = (int *) malloc(size * sizeof(int));
     for (int i = 0; i < size; i++) {
         arrA[i] = rand() % size;
     }
     printArray(arrA, size);
 
     printf("\nthe amount of operations to perform bubble sort:");
-    int *arrB = (int *)malloc(size * sizeof(int));
+    int *arrB = (int *) malloc(size * sizeof(int));
 
     copyArray(arrA, arrB, size);
     printf("\n%-12s: %d\t", "classic", bubbleSortClassic(arrB, size));
