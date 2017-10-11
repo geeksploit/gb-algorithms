@@ -7,6 +7,8 @@ void task1();
 
 int bubbleSortClassic(int *array, size_t size);
 
+int bubbleSortOptimizedMinusI(int *array, size_t size);
+
 void copyArray(int *arrA, int *arrB, size_t size);
 
 void printArray(int *array, size_t size);
