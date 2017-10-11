@@ -37,6 +37,7 @@ void task0() {
  */
 void task1() {
     srand(time(NULL));
+    const size_t size = 10;
 }
 
 //<editor-fold desc="Utility functions">
