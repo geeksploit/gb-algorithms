@@ -55,6 +55,8 @@ int bubbleSortClassic(int *array, size_t size) {
     for (int i = 0; i < size; i++) {
         for (int j = 0; j < size - 1; j++) {
             counter++;
+            if (array[j] > array[j + 1]) {
+            }
         }
     }
 
