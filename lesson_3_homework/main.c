@@ -131,6 +131,7 @@ int bubbleSortOptimizedCheckSort(int *array, size_t size) {
 int bubbleSortOptimizedMinusICheckSort(int *array, size_t size) {
     int counter = 0;
     for (int i = 0; i < size; i++) {
+        int isSorted = 1;
     }
     return counter;
 }
