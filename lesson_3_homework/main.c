@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
+#include <time.h>
 #include "main.h"
 
 int main() {
@@ -28,3 +29,7 @@ void task0() {
     printf("thanks for staying with us, bye\n");
     exit(0);
 }
+
+//<editor-fold desc="Utility functions">
+
+//</editor-fold>
