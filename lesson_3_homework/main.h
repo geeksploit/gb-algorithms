@@ -3,6 +3,8 @@
 
 void task0();
 
+void task1();
+
 void copyArray(int *arrA, int *arrB, size_t size);
 
 void printArray(int *array, size_t size);
