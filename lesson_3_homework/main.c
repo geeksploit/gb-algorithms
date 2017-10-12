@@ -116,6 +116,10 @@ void task2() {
             }
         }
 
+        if (isSorted) {
+            break;
+        }
+
         printf("\n");
         printArray(arr, size);
     }
