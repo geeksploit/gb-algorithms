@@ -76,6 +76,12 @@ void task1() {
     free(arrB);
 }
 
+/*
+ * 2. *Реализовать шейкерную сортировку.
+ */
+void task2() {
+}
+
 int bubbleSortClassic(int *array, size_t size) {
     int counter = 0;
 
