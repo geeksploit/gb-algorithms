@@ -115,6 +115,9 @@ void task2() {
                 isSorted = 0;
             }
         }
+
+        printf("\n");
+        printArray(arr, size);
     }
 
     free(arr);
