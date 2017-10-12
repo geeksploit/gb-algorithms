@@ -93,6 +93,8 @@ void task2() {
     printf("\nshaker sort:");
 
     for (int i = 0; i < size; i++) {
+        printf("\n");
+        printArray(arr, size);
     }
 
     free(arr);
