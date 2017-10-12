@@ -83,6 +83,10 @@ void task1() {
 void task2() {
     srand(time(NULL));
     const size_t size = 10;
+
+    int *arr = (int *) malloc(size * sizeof(int));
+
+    free(arr);
 }
 
 int bubbleSortClassic(int *array, size_t size) {
