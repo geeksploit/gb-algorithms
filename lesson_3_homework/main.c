@@ -4,7 +4,7 @@
 #include "main.h"
 
 int main() {
-    void (*menu[])(void) = {&task0, &task1};
+    void (*menu[])(void) = {&task0, &task1, &task2};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -17,6 +17,7 @@ int main() {
         printf("\nplease enter your choice to proceed:");
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "bubble sort");
+        printf("\n[%2d] %s", 2, "shaker sort");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -74,6 +75,56 @@ void task1() {
 
     free(arrA);
     free(arrB);
+}
+
+/*
+ * 2. *Реализовать шейкерную сортировку.
+ */
+void task2() {
+    srand(time(NULL));
+    const size_t size = 10;
+
+    int *arr = (int *) malloc(size * sizeof(int));
+    for (int i = 0; i < size; i++) {
+        arr[i] = rand() % (size * 10);
+    }
+    printArray(arr, size);
+
+    printf("\nshaker sort:");
+
+    for (int i = 0; i < size; i++) {
+        int isSorted = 1;
+
+        for (int j = i; j < size - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+                swap(&arr[j], &arr[j + 1]);
+                isSorted = 0;
+            }
+        }
+
+        if (isSorted) {
+            break;
+        }
+
+        printf("\n");
+        printArray(arr, size);
+
+        for (int j = size - 1; j > i; j--) {
+            if (arr[j] < arr[j - 1]) {
+                swap(&arr[j], &arr[j - 1]);
+                isSorted = 0;
+            }
+        }
+
+        if (isSorted) {
+            break;
+        }
+
+        printf("\n");
+        printArray(arr, size);
+    }
+
+    free(arr);
 }
 
 int bubbleSortClassic(int *array, size_t size) {

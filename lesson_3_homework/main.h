@@ -5,6 +5,8 @@ void task0();
 
 void task1();
 
+void task2();
+
 int bubbleSortClassic(int *array, size_t size);
 
 int bubbleSortOptimizedMinusI(int *array, size_t size);
