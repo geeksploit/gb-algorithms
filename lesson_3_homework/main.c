@@ -95,6 +95,9 @@ void task2() {
     for (int i = 0; i < size; i++) {
         int isSorted = 1;
 
+        for (int j = i; j < size - 1 - i; j++) {
+        }
+
         if (isSorted) {
             break;
         }
