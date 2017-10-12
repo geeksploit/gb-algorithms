@@ -112,6 +112,7 @@ void task2() {
         for (int j = size - 1; j > i; j--) {
             if (arr[j] < arr[j - 1]) {
                 swap(&arr[j], &arr[j - 1]);
+                isSorted = 0;
             }
         }
     }
