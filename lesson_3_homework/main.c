@@ -81,6 +81,7 @@ void task1() {
  * 2. *Реализовать шейкерную сортировку.
  */
 void task2() {
+    srand(time(NULL));
 }
 
 int bubbleSortClassic(int *array, size_t size) {
