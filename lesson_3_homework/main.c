@@ -85,6 +85,8 @@ void task2() {
     const size_t size = 10;
 
     int *arr = (int *) malloc(size * sizeof(int));
+    for (int i = 0; i < size; i++) {
+    }
 
     free(arr);
 }
