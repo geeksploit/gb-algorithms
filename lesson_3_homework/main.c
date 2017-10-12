@@ -88,6 +88,7 @@ void task2() {
     for (int i = 0; i < size; i++) {
         arr[i] = rand() % (size * 10);
     }
+    printArray(arr, size);
 
     free(arr);
 }
