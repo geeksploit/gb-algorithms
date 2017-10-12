@@ -108,6 +108,9 @@ void task2() {
 
         printf("\n");
         printArray(arr, size);
+
+        for (int j = size - 1; j > i; j--) {
+        }
     }
 
     free(arr);
