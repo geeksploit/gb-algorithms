@@ -96,6 +96,8 @@ void task2() {
         int isSorted = 1;
 
         for (int j = i; j < size - 1 - i; j++) {
+            if (arr[j] > arr[j + 1]) {
+            }
         }
 
         if (isSorted) {
