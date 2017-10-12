@@ -97,6 +97,7 @@ void task2() {
 
         for (int j = i; j < size - 1 - i; j++) {
             if (arr[j] > arr[j + 1]) {
+                swap(&arr[j], &arr[j + 1]);
             }
         }
 
