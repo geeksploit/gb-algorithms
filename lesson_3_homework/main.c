@@ -95,6 +95,10 @@ void task2() {
     for (int i = 0; i < size; i++) {
         int isSorted = 1;
 
+        if (isSorted) {
+            break;
+        }
+
         printf("\n");
         printArray(arr, size);
     }
