@@ -110,6 +110,8 @@ void task2() {
         printArray(arr, size);
 
         for (int j = size - 1; j > i; j--) {
+            if (arr[j] < arr[j - 1]) {
+            }
         }
     }
 
