@@ -156,6 +156,7 @@ int binarySearch(int *sortedArray, size_t size, int numberToFind) {
         } else {
             tail = cursor;
         }
+        cursor = (head + tail) / 2;
     }
     return cursor;
 }
