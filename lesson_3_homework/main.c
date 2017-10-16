@@ -140,6 +140,7 @@ void task3() {
     for (int i = 1; i < size; i++) {
         array[i] = array[i - 1] + rand() % size;
     }
+    printArray(array, size);
 }
 
 int bubbleSortClassic(int *array, size_t size) {
