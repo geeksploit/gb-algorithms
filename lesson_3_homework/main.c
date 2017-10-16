@@ -141,6 +141,11 @@ void task3() {
         array[i] = array[i - 1] + rand() % size;
     }
     printArray(array, size);
+
+    int numberToFind;
+    printf("\nplease enter a number to find: ");
+    scanf("%d", &numberToFind);
+
 }
 
 int binarySearch(int *sortedArray, size_t size, int numberToFind) {
