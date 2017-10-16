@@ -147,6 +147,8 @@ void task3() {
     scanf("%d", &numberToFind);
 
     int searchResult = binarySearch(array, size, numberToFind);
+
+    printf("the element %d ", numberToFind);
 }
 
 int binarySearch(int *sortedArray, size_t size, int numberToFind) {
