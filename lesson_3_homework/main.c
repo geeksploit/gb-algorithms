@@ -148,6 +148,9 @@ int binarySearch(int *sortedArray, size_t size, int numberToFind) {
     size_t head = size;
     size_t cursor = size / 2;
     while (sortedArray[cursor] != numberToFind) {
+        if (tail + 1 == head) {
+            return -1;  // nothing found
+        }
     }
     return cursor;
 }
