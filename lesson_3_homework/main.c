@@ -137,6 +137,8 @@ void task3() {
     int *array = (int *) malloc(size * sizeof(int));
 
     array[0] = rand() % size;
+    for (int i = 1; i < size; i++) {
+    }
 }
 
 int bubbleSortClassic(int *array, size_t size) {
