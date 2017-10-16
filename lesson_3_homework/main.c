@@ -149,6 +149,9 @@ void task3() {
     int searchResult = binarySearch(array, size, numberToFind);
 
     printf("the element %d ", numberToFind);
+    if (searchResult == -1) {
+        printf("is not in the array");
+    }
 }
 
 int binarySearch(int *sortedArray, size_t size, int numberToFind) {
