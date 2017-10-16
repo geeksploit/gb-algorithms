@@ -152,6 +152,7 @@ int binarySearch(int *sortedArray, size_t size, int numberToFind) {
             return -1;  // nothing found
         }
         if (sortedArray[cursor] > numberToFind) {
+            head = cursor;
         }
     }
     return cursor;
