@@ -143,6 +143,9 @@ void task3() {
     printArray(array, size);
 }
 
+int binarySearch(int *sortedArray, size_t size, int numberToFind) {
+}
+
 int bubbleSortClassic(int *array, size_t size) {
     int counter = 0;
 

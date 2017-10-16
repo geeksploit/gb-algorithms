@@ -9,6 +9,8 @@ void task2();
 
 void task3();
 
+int binarySearch(int *sortedArray, size_t size, int numberToFind);
+
 int bubbleSortClassic(int *array, size_t size);
 
 int bubbleSortOptimizedMinusI(int *array, size_t size);
