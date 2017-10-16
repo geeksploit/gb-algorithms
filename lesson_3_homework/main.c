@@ -151,6 +151,8 @@ void task3() {
     printf("the element %d ", numberToFind);
     if (searchResult == -1) {
         printf("is not in the array");
+    } else {
+        printf("is at index %d", searchResult);
     }
 }
 
