@@ -4,7 +4,7 @@
 #include "main.h"
 
 int main() {
-    void (*menu[])(void) = {&task0, &task1, &task2};
+    void (*menu[])(void) = {&task0, &task1, &task2, &task3};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -18,6 +18,7 @@ int main() {
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "bubble sort");
         printf("\n[%2d] %s", 2, "shaker sort");
+        printf("\n[%2d] %s", 3, "binary search");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -125,6 +126,52 @@ void task2() {
     }
 
     free(arr);
+}
+
+/* 3. Реализовать бинарный алгоритм поиска в виде функции, которой передается отсортированный массив.
+ * Функция возвращает индекс найденного элемента или -1, если элемент не найден.
+ */
+void task3() {
+    srand(time(NULL));
+    const size_t size = 20;
+    int *array = (int *) malloc(size * sizeof(int));
+
+    array[0] = rand() % size;
+    for (int i = 1; i < size; i++) {
+        array[i] = array[i - 1] + rand() % size;
+    }
+    printArray(array, size);
+
+    int numberToFind;
+    printf("\nplease enter a number to find: ");
+    scanf("%d", &numberToFind);
+
+    int searchResult = binarySearch(array, size, numberToFind);
+
+    printf("the element %d ", numberToFind);
+    if (searchResult == -1) {
+        printf("is not in the array");
+    } else {
+        printf("is at index %d", searchResult);
+    }
+}
+
+int binarySearch(int *sortedArray, size_t size, int numberToFind) {
+    size_t tail = 0;
+    size_t head = size;
+    size_t cursor = size / 2;
+    while (sortedArray[cursor] != numberToFind) {
+        if (tail + 1 == head) {
+            return -1;  // nothing found
+        }
+        if (sortedArray[cursor] > numberToFind) {
+            head = cursor;
+        } else {
+            tail = cursor;
+        }
+        cursor = (head + tail) / 2;
+    }
+    return cursor;
 }
 
 int bubbleSortClassic(int *array, size_t size) {
