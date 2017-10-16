@@ -138,6 +138,7 @@ void task3() {
 
     array[0] = rand() % size;
     for (int i = 1; i < size; i++) {
+        array[i] = array[i - 1] + rand() % size;
     }
 }
 
