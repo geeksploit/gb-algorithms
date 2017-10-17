@@ -9,4 +9,5 @@ void push(T value) {
     }
 
     Node *new_node = (Node *) malloc(sizeof(Node));
+    new_node->value = value;
 }
