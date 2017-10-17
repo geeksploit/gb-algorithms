@@ -17,4 +17,6 @@ struct Stack {
 
 struct Stack stack;
 
+void push(T value);
+
 #endif //LESSON_5_HOMEWORK_INTEGER_STACK_H
