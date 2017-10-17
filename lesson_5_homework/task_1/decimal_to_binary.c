@@ -15,6 +15,7 @@ void task_1() {
     stack.head = NULL;
 
     while (decimal > 0) {
+        push(decimal % 2);
         decimal /= 2;
     }
 }
