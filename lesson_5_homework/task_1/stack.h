@@ -15,4 +15,6 @@ struct Stack {
     int maxSize;
 };
 
+struct Stack stack;
+
 #endif //LESSON_5_HOMEWORK_INTEGER_STACK_H
