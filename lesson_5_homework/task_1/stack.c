@@ -15,3 +15,7 @@ void push(T value) {
     stack.head = new_node;
     stack.size++;
 }
+
+T pop() {
+    return NULL;
+}
