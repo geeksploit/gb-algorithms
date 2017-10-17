@@ -26,6 +26,9 @@ T pop() {
 
     Node *old_head = stack.head;
 
+    stack.head = stack.head->next;
+    stack.size--;
+
     free(old_head);
 
     return value;
