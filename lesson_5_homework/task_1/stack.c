@@ -24,5 +24,9 @@ T pop() {
 
     T value = stack.head->value;
 
+    Node *old_head = stack.head;
+
+    free(old_head);
+
     return value;
 }
