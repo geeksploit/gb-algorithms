@@ -18,4 +18,8 @@ void task_1() {
         push(decimal % 2);
         decimal /= 2;
     }
+
+    while (stack.head != NULL) {
+        printf("%d ", pop());
+    }
 }
