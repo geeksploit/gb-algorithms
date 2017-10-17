@@ -21,5 +21,8 @@ T pop() {
         printf("stack is empty");
         return NULL;
     }
-    return NULL;
+
+    T value = stack.head->value;
+
+    return value;
 }
