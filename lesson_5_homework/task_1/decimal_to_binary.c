@@ -13,4 +13,8 @@ void task_1() {
 
     stack.maxSize = 100;
     stack.head = NULL;
+
+    while (decimal > 0) {
+        decimal /= 2;
+    }
 }
