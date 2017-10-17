@@ -18,6 +18,8 @@ void push(T value) {
 
 T pop() {
     if (stack.size == 0) {
+        printf("stack is empty");
+        return NULL;
     }
     return NULL;
 }
