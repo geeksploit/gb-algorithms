@@ -9,4 +9,10 @@ struct TNode {
 };
 typedef struct TNode Node;
 
+struct Stack {
+    Node *head;
+    int size;
+    int maxSize;
+};
+
 #endif //LESSON_5_HOMEWORK_INTEGER_STACK_H
