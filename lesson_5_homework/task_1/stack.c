@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <malloc.h>
 #include "stack.h"
 
 void push(T value) {
@@ -6,4 +7,6 @@ void push(T value) {
         printf("Error: stack overflow!");
         return;
     }
+
+    Node *new_node = (Node *) malloc(sizeof(Node));
 }
