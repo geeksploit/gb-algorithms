@@ -73,5 +73,7 @@ void task_4() {
 
     ListNode *list2 = copyList(list1);
 
+    ListNode *cursor;
+
     printf("the first list:\n");
 }
