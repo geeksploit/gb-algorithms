@@ -3,9 +3,10 @@
 #include "main.h"
 #include "task_1/decimal_to_binary.h"
 #include "task_2/stack_with_memory_control.h"
+#include "task_4/copy_linked_list.h"
 
 int main() {
-    void (*menu[])(void) = {&task_0, &task_1, &task_2};
+    void (*menu[])(void) = {&task_0, &task_1, &task_2, &task_0, &task_4};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -18,8 +19,8 @@ int main() {
         printf("\nplease enter your choice to proceed:");
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "decimal to binary using stack");
-        printf("\n[%2d] %s", 2, "list-based stack with memory control"
-                "");
+        printf("\n[%2d] %s", 2, "list-based stack with memory control");
+        printf("\n[%2d] %s", 4, "copy linked list");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
@@ -58,4 +59,33 @@ void task_2() {
 
     free(stack);
     printf("\nthe stack is deleted from memory.");
+}
+
+/*
+ * 4. *Создать функцию, копирующую односвязный список
+ * (то есть создает в памяти копию односвязного списка, без удаления первого списка).
+ */
+void task_4() {
+    ListNode *list1 = (ListNode *) malloc(sizeof(ListNode));
+    list1->value = rand();
+    list1->nextNode = NULL;
+    insertAfter(insertAfter(list1, rand()), rand());
+
+    ListNode *list2 = copyList(list1);
+
+    ListNode *cursor;
+
+    printf("the first list:\n");
+    cursor = list1;
+    while (cursor != NULL) {
+        printf("%p: [%c] ", cursor, cursor->value);
+        cursor = cursor->nextNode;
+    }
+
+    printf("\nthe second list:\n");
+    cursor = list2;
+    while (cursor != NULL) {
+        printf("%p: [%c] ", cursor, cursor->value);
+        cursor = cursor->nextNode;
+    }
 }
