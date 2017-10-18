@@ -2,7 +2,7 @@
 #include "copy_linked_list.h"
 
 ListNode *addToList(ListNode *node, ListValue value) {
-    ListNode new_node = (ListNode *) malloc(sizeof(ListNode));
+    ListNode *new_node = (ListNode *) malloc(sizeof(ListNode));
     if (new_node == NULL) {
         return NULL;
     }
