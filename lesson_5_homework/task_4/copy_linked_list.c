@@ -8,6 +8,7 @@ ListNode *copyList(ListNode *source_list) {
     }
 
     ListNode *cursor = source_list;
+    ListNode *new_cursor = new_list;
 }
 
 ListNode *insertAfter(ListNode *node, ListValue value) {
