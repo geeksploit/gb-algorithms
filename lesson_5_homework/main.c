@@ -83,6 +83,7 @@ void task_3() {
     getline(&line, &size, stdin);
 
     for (int i = 0; i < strlen(line); i++) {
+        char c = line[i];
     }
 }
 
