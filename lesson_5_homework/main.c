@@ -88,6 +88,9 @@ void task_3() {
         if (strchr(LEFT_BRACKETS, c) != NULL) {
             pushStack(bracketsStack, c);
         }
+
+        if (strchr(RIGHT_BRACKETS, c) != NULL) {
+        }
     }
 }
 
