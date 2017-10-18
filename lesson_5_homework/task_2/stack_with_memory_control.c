@@ -23,6 +23,8 @@ T popStack(Stack *stack) {
 
     Node *old_head = stack->head;
 
+    stack->head = stack->head->next;
+
     free(old_head);
 
     return value;
