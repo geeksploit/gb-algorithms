@@ -3,4 +3,6 @@
 
 void task_0();
 
+void task_2();
+
 #endif //LESSON_5_HOMEWORK_MAIN_H
