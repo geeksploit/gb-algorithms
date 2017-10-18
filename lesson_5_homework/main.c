@@ -77,4 +77,7 @@ void task_4() {
 
     printf("the first list:\n");
     cursor = list1;
+    while (cursor != NULL) {
+        cursor = cursor->nextNode;
+    }
 }
