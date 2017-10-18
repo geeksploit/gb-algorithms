@@ -5,7 +5,7 @@
 
 struct ListNodeStruct {
     ListValue value;
-    struct ListNodeStruct nextNode;
+    struct ListNodeStruct *nextNode;
 };
 typedef struct ListNodeStruct ListNode;
 
