@@ -1,7 +1,7 @@
 #include <malloc.h>
 #include "copy_linked_list.h"
 
-ListNode *copyList(ListNode *node) {
+ListNode *copyList(ListNode *source_list) {
     ListNode *new_list = (ListNode *) malloc(sizeof(ListNode));
     if (new_list == NULL) {
         return NULL;
