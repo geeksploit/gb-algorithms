@@ -9,6 +9,8 @@ struct ListNodeStruct {
 };
 typedef struct ListNodeStruct ListNode;
 
+ListNode *copyList(ListNode *node);
+
 ListNode *insertAfter(ListNode *node, ListValue value);
 
 #endif //LESSON_5_HOMEWORK_COPY_LINKED_LIST_H
