@@ -9,4 +9,6 @@ ListNode *addToList(ListNode *node, ListValue value) {
 
     new_node->nextNode = node->nextNode;
     node->nextNode = new_node;
+
+    new_node->value = value;
 }
