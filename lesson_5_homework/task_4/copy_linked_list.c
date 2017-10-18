@@ -11,6 +11,10 @@ ListNode *copyList(ListNode *source_list) {
     ListNode *new_cursor = new_list;
 
     new_list->nextNode = NULL;
+
+    while (source_cursor != NULL) {
+        source_cursor = source_cursor->nextNode;
+    }
 }
 
 ListNode *insertAfter(ListNode *node, ListValue value) {
