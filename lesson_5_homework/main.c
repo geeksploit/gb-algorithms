@@ -70,4 +70,6 @@ void task_4() {
     list1->value = rand();
     list1->nextNode = NULL;
     insertAfter(insertAfter(list1, rand()), rand());
+
+    ListNode *list2 = copyList(list1);
 }
