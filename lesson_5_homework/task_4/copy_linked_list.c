@@ -6,6 +6,8 @@ ListNode *copyList(ListNode *source_list) {
     if (new_list == NULL) {
         return NULL;
     }
+
+    ListNode *cursor = source_list;
 }
 
 ListNode *insertAfter(ListNode *node, ListValue value) {
