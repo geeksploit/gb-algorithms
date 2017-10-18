@@ -74,6 +74,9 @@ void task_3() {
 
     Stack *bracketsStack = (Stack *) malloc(sizeof(Stack));
     bracketsStack->head = NULL;
+
+    size_t size = 255;
+    char *line = (char *) malloc(size * sizeof(char));
 }
 
 /*
