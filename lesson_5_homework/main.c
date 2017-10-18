@@ -69,6 +69,8 @@ void task_2() {
  * Например: (2+(2*2)) или [2/{5*(4+7)}]
  */
 void task_3() {
+    const char *LEFT_BRACKETS = "([{";
+    const char *RIGHT_BRACKETS = ")]}";
 }
 
 /*
