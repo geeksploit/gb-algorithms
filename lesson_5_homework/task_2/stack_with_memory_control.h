@@ -9,4 +9,9 @@ struct TNode {
 };
 typedef struct TNode Node;
 
+struct TStack {
+    Node *head;
+};
+typedef struct TStack Stack;
+
 #endif //LESSON_5_HOMEWORK_STACK_WITH_MEMORY_CHECK_H
