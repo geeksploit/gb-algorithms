@@ -84,4 +84,7 @@ void task_4() {
 
     printf("\nthe second list:\n");
     cursor = list2;
+    while (cursor != NULL) {
+        cursor = cursor->nextNode;
+    }
 }
