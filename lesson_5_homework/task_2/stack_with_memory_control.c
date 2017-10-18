@@ -9,4 +9,6 @@ void push(Stack *stack, T value) {
 
     new_node->value = value;
     new_node->next = stack->head;
+
+    stack->head = new_node;
 }
