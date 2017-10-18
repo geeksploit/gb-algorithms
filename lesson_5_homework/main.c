@@ -41,4 +41,7 @@ void task_0() {
  */
 void task_2() {
     Stack *stack = (Stack *) malloc(sizeof(Stack));
+    if (stack != NULL) {
+        stack->head = NULL;
+    }
 }
