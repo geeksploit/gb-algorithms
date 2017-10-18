@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <mem.h>
 #include "main.h"
 #include "task_1/decimal_to_binary.h"
 #include "task_2/stack_with_memory_control.h"
@@ -80,6 +81,9 @@ void task_3() {
 
     fseek(stdin, 0, SEEK_END);
     getline(&line, &size, stdin);
+
+    for (int i = 0; i < strlen(line); i++) {
+    }
 }
 
 /*
