@@ -77,6 +77,9 @@ void task_3() {
 
     size_t size = 255;
     char *line = (char *) malloc(size * sizeof(char));
+
+    fseek(stdin, 0, SEEK_END);
+    getline(&line, &size, stdin);
 }
 
 /*
