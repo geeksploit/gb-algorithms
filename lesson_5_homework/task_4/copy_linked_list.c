@@ -7,7 +7,7 @@ ListNode *copyList(ListNode *source_list) {
         return NULL;
     }
 
-    ListNode *cursor = source_list;
+    ListNode *source_cursor = source_list;
     ListNode *new_cursor = new_list;
 
     new_list->nextNode = NULL;
