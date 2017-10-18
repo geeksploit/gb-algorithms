@@ -97,6 +97,8 @@ void task_3() {
             int right_bracket_index = (int) (strchr(RIGHT_BRACKETS, right_bracket) - RIGHT_BRACKETS);
 
             if (left_bracket_index != right_bracket_index) {
+                printf("Error: brackets do not match!");
+                return;
             }
         }
     }
