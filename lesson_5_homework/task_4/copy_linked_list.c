@@ -2,6 +2,7 @@
 #include "copy_linked_list.h"
 
 ListNode *copyList(ListNode *node) {
+    ListNode *new_list = (ListNode *) malloc(sizeof(ListNode));
 }
 
 ListNode *insertAfter(ListNode *node, ListValue value) {
