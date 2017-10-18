@@ -84,6 +84,10 @@ void task_3() {
 
     for (int i = 0; i < strlen(line); i++) {
         char c = line[i];
+
+        if (strchr(LEFT_BRACKETS, c) != NULL) {
+            pushStack(bracketsStack, c);
+        }
     }
 }
 
