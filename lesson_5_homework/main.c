@@ -20,7 +20,7 @@ int main() {
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "decimal to binary using stack");
         printf("\n[%2d] %s", 2, "list-based stack with memory control");
-        printf("\n[%2d] %s", 3, "copy linked list");
+        printf("\n[%2d] %s", 4, "copy linked list");
         printf("\n> ");
     } while (scanf("%d", &choice));
 
