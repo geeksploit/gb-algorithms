@@ -44,4 +44,7 @@ void task_2() {
     if (stack != NULL) {
         stack->head = NULL;
     }
+
+    while (pushStack(stack, rand()) != NULL) {
+    }
 }
