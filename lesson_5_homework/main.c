@@ -57,4 +57,5 @@ void task_2() {
     printf("\nthe stack is now empty");
 
     free(stack);
+    printf("\nthe stack is deleted from memory.");
 }
