@@ -3,6 +3,7 @@
 #include "main.h"
 #include "task_1/decimal_to_binary.h"
 #include "task_2/stack_with_memory_control.h"
+#include "task_4/copy_linked_list.h"
 
 int main() {
     void (*menu[])(void) = {&task_0, &task_1, &task_2, &task_0, &task_4};
@@ -65,4 +66,5 @@ void task_2() {
  * (то есть создает в памяти копию односвязного списка, без удаления первого списка).
  */
 void task_4() {
+    ListNode *list1 = (ListNode *) malloc(sizeof(ListNode));
 }
