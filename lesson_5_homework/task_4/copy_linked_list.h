@@ -9,4 +9,6 @@ struct ListNodeStruct {
 };
 typedef struct ListNodeStruct ListNode;
 
+ListNode *addToList(ListNode *node, ListValue value);
+
 #endif //LESSON_5_HOMEWORK_COPY_LINKED_LIST_H
