@@ -6,7 +6,7 @@
 #include "task_4/copy_linked_list.h"
 
 int main() {
-    void (*menu[])(void) = {&task_0, &task_1, &task_2, &task_0, &task_4};
+    void (*menu[])(void) = {&task_0, &task_1, &task_2, &task_3, &task_4};
     int menuSize = sizeof(menu) / sizeof(menu[0]);
 
     int choice = -1;
@@ -20,6 +20,7 @@ int main() {
         printf("\n[%2d] %s", 0, "exit");
         printf("\n[%2d] %s", 1, "decimal to binary using stack");
         printf("\n[%2d] %s", 2, "list-based stack with memory control");
+        printf("\n[%2d] %s", 3, "match brackets");
         printf("\n[%2d] %s", 4, "copy linked list");
         printf("\n> ");
     } while (scanf("%d", &choice));
@@ -59,6 +60,15 @@ void task_2() {
 
     free(stack);
     printf("\nthe stack is deleted from memory.");
+}
+
+/*
+ * 3. Написать программу, которая определяет, является ли введенная скобочная последовательность правильной.
+ * Примеры правильных скобочных выражений: (), ([])(), {}(), ([{}]),
+ * неправильных — )(, ())({), (, ])}), ([(]) для скобок [,(,{.
+ * Например: (2+(2*2)) или [2/{5*(4+7)}]
+ */
+void task_3() {
 }
 
 /*
