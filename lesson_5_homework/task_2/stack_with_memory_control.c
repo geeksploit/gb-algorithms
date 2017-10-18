@@ -15,4 +15,7 @@ Node *pushStack(Stack *stack, T value) {
 }
 
 T popStack(Stack *stack) {
+    if (stack->head == NULL) {
+        return NULL;
+    }
 }
