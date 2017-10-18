@@ -14,6 +14,6 @@ struct TStack {
 };
 typedef struct TStack Stack;
 
-void push(Stack *stack, T value);
+void pushStack(Stack *stack, T value);
 
 #endif //LESSON_5_HOMEWORK_STACK_WITH_MEMORY_CHECK_H
