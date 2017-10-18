@@ -71,6 +71,9 @@ void task_2() {
 void task_3() {
     const char *LEFT_BRACKETS = "([{";
     const char *RIGHT_BRACKETS = ")]}";
+
+    Stack *bracketsStack = (Stack *) malloc(sizeof(Stack));
+    bracketsStack->head = NULL;
 }
 
 /*
