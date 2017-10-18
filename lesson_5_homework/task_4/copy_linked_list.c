@@ -3,6 +3,9 @@
 
 ListNode *copyList(ListNode *node) {
     ListNode *new_list = (ListNode *) malloc(sizeof(ListNode));
+    if (new_list == NULL) {
+        return NULL;
+    }
 }
 
 ListNode *insertAfter(ListNode *node, ListValue value) {
