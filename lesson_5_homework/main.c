@@ -81,4 +81,6 @@ void task_4() {
         printf("%c ", cursor->value);
         cursor = cursor->nextNode;
     }
+
+    printf("\nthe second list:\n");
 }
