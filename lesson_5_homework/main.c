@@ -45,6 +45,7 @@ void task_2() {
         stack->head = NULL;
     }
 
+    printf("filling the stack with random values...");
     while (pushStack(stack, rand()) != NULL) {
     }
     printf("\nthere is no memory to push another value on the stack");
