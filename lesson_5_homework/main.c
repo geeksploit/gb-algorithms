@@ -69,4 +69,5 @@ void task_4() {
     ListNode *list1 = (ListNode *) malloc(sizeof(ListNode));
     list1->value = rand();
     list1->nextNode = NULL;
+    insertAfter(insertAfter(list1, rand()), rand());
 }
