@@ -10,6 +10,7 @@ ListNode *copyList(ListNode *source_list) {
     ListNode *source_cursor = source_list;
     ListNode *new_cursor = new_list;
 
+    new_list->value = source_list->value;
     new_list->nextNode = NULL;
 
     while (source_cursor != NULL) {
