@@ -55,4 +55,6 @@ void task_2() {
         popStack(stack);
     }
     printf("\nthe stack is now empty");
+
+    free(stack);
 }
