@@ -95,6 +95,9 @@ void task_3() {
 
             int left_bracket_index = (int) (strchr(LEFT_BRACKETS, left_bracket) - LEFT_BRACKETS);
             int right_bracket_index = (int) (strchr(RIGHT_BRACKETS, right_bracket) - RIGHT_BRACKETS);
+
+            if (left_bracket_index != right_bracket_index) {
+            }
         }
     }
 }
