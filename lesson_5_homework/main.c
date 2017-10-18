@@ -105,6 +105,8 @@ void task_3() {
 
     if (bracketsStack->head == NULL) {
         printf("Ok: brackets do match.");
+    } else {
+        printf("Error: brackets do not match!");
     }
 }
 
