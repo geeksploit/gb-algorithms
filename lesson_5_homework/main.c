@@ -72,4 +72,6 @@ void task_4() {
     insertAfter(insertAfter(list1, rand()), rand());
 
     ListNode *list2 = copyList(list1);
+
+    printf("the first list:\n");
 }
