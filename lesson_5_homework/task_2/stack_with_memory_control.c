@@ -13,3 +13,6 @@ Node *pushStack(Stack *stack, T value) {
     stack->head = new_node;
     return stack->head;
 }
+
+T popStack(Stack *stack) {
+}
