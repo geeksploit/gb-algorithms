@@ -3,7 +3,7 @@
 
 ListNode *copyList(ListNode *source_list) {
     ListNode *new_list = (ListNode *) malloc(sizeof(ListNode));
-    if (new_list == NULL) {
+    if (new_list == NULL || source_list == NULL) {
         return NULL;
     }
 
