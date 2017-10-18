@@ -78,14 +78,14 @@ void task_4() {
     printf("the first list:\n");
     cursor = list1;
     while (cursor != NULL) {
-        printf("%c ", cursor->value);
+        printf("%p: [%c] ", cursor, cursor->value);
         cursor = cursor->nextNode;
     }
 
     printf("\nthe second list:\n");
     cursor = list2;
     while (cursor != NULL) {
-        printf("%c ", cursor->value);
+        printf("%p: [%c] ", cursor, cursor->value);
         cursor = cursor->nextNode;
     }
 }
