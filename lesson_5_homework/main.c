@@ -90,6 +90,8 @@ void task_3() {
         }
 
         if (strchr(RIGHT_BRACKETS, c) != NULL) {
+            char left_bracket = (char) popStack(bracketsStack);
+            char right_bracket = c;
         }
     }
 }
