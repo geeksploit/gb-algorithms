@@ -50,7 +50,9 @@ void task_2() {
     }
     printf("\nthere is no memory to push another value on the stack");
 
+    printf("\nreleasing the memory allocated for the stack...");
     while (stack->head != NULL) {
         popStack(stack);
     }
+    printf("\nthe stack is now empty");
 }
