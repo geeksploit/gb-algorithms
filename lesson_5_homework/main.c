@@ -76,4 +76,5 @@ void task_4() {
     ListNode *cursor;
 
     printf("the first list:\n");
+    cursor = list1;
 }
