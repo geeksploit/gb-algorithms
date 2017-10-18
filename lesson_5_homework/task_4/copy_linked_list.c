@@ -13,6 +13,7 @@ ListNode *copyList(ListNode *source_list) {
     new_list->nextNode = NULL;
 
     while (source_cursor != NULL) {
+        new_cursor = insertAfter(new_cursor, source_cursor->value);
         source_cursor = source_cursor->nextNode;
     }
 }
