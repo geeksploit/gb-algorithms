@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 #include "task_1/decimal_to_binary.h"
+#include "task_2/stack_with_memory_control.h"
 
 int main() {
     void (*menu[])(void) = {&task_0, &task_1, &task_2};
@@ -39,4 +40,5 @@ void task_0() {
  * Постарайтесь создать ситуацию, когда память не будет выделяться (добавлением большого количества данных).
  */
 void task_2() {
+    Stack *stack = (Stack *) malloc(sizeof(Stack));
 }
