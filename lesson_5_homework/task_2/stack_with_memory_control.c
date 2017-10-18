@@ -6,4 +6,6 @@ void push(Stack *stack, T value) {
     if (new_node == NULL) {
         return;
     }
+
+    new_node->value = value;
 }
