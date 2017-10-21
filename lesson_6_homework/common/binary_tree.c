@@ -28,6 +28,8 @@ Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child) {
 }
 
 void printStringData(TraverseAction action, void *data) {
+    switch (action) {
+    }
 }
 
 // ​​“корень-левый-правый" - обход в прямом порядке
