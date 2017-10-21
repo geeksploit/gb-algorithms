@@ -1,3 +1,7 @@
+/*
+ * 2. Переписать программу, реализующее двоичное дерево поиска.
+ */
+
 #include <stdio.h>
 #include "common/binary_tree.h"
 
