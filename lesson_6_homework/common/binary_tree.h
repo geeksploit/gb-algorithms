@@ -6,6 +6,8 @@ enum TraverseAction {
 };
 typedef enum TraverseAction TraverseAction;
 
+typedef void(*t_function)(TraverseAction traverseAction, void *);
+
 enum SplitDirection {
     LEFT, RIGHT
 };
