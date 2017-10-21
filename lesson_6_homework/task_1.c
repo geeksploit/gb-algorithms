@@ -12,6 +12,7 @@ int main() {
     printf("please enter a string of characters: ");
     scanf("%" STRINGIFY(MAX_LINE_LENGTH) "s", input_string);
 
+    printf("the hash for the given string is: %u", hash_sum(input_string));
     return 0;
 }
 
