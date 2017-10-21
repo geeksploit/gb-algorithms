@@ -1,6 +1,11 @@
 #ifndef LESSON_6_HOMEWORK_BINARY_TREE_H
 #define LESSON_6_HOMEWORK_BINARY_TREE_H
 
+enum TraverseAction {
+    ROOT_NODE, PRE_LEFT, SEPARATOR, POST_RIGHT, NO_NODE
+};
+typedef enum TraverseAction TraverseAction;
+
 enum SplitDirection {
     LEFT, RIGHT
 };
