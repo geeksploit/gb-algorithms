@@ -45,4 +45,6 @@ void traverseBinaryTreePreOrder(Node *node, t_function handler) {
 
     if (node->right)
         traverseBinaryTreePreOrder(node->right, handler);
+    else
+        handler(NO_NODE, NULL);
 }
