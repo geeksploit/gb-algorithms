@@ -25,3 +25,7 @@ Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child) {
 
     return child;
 }
+
+// ​​“корень-левый-правый" - обход в прямом порядке
+void traverseBinaryTreePreOrder(Node *node, t_function handler) {
+}

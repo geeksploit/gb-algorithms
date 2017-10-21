@@ -24,4 +24,6 @@ typedef struct Node Node;
 Node *makeNode(void *data);
 Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child);
 
+void traverseBinaryTreePreOrder(Node *node, t_function handler);
+
 #endif //LESSON_6_HOMEWORK_BINARY_TREE_H
