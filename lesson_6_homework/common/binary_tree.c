@@ -70,3 +70,7 @@ void traverseBinaryTreePreOrder(Node *node, t_function handler) {
         handler(NO_NODE, NULL);
     handler(POST_RIGHT, NULL);
 }
+
+// ​​“левый​​-​​корень​​-​​правый”​(симметричный обход, in-order)
+void traverseBinaryTreeInOrder(Node *node, t_function handler) {
+}
