@@ -118,4 +118,6 @@ void traverseBinaryTreePostOrder(Node *node, t_function handler) {
     else
         handler(NO_NODE, NULL);
     handler(POST_RIGHT, NULL);
+
+    handler(ROOT_NODE, node->data);
 }
