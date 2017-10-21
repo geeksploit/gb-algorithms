@@ -25,5 +25,6 @@ Node *makeNode(void *data);
 Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child);
 
 void traverseBinaryTreePreOrder(Node *node, t_function handler);
+void printStringData(TraverseAction action, void *data);
 
 #endif //LESSON_6_HOMEWORK_BINARY_TREE_H

@@ -1,4 +1,5 @@
 #include <malloc.h>
+#include <stdio.h>
 #include "binary_tree.h"
 
 Node *makeNode(void *data) {
@@ -24,6 +25,9 @@ Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child) {
     child->parent = parent;
 
     return child;
+}
+
+void printStringData(TraverseAction action, void *data) {
 }
 
 // ​​“корень-левый-правый" - обход в прямом порядке
