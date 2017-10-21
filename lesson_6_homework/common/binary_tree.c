@@ -21,5 +21,7 @@ Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child) {
             break;
     }
 
+    child->parent = parent;
+
     return child;
 }
