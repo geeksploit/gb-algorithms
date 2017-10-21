@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "common/binary_tree.h"
 
 int main() {
@@ -8,4 +9,5 @@ int main() {
     Node *right = appendNode(root, RIGHT, makeNode("right_1"));
 
     traverseBinaryTreePreOrder(root, action);
+    printf("\n");
 }
