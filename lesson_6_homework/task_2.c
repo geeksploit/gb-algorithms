@@ -25,4 +25,7 @@ int main() {
 
     traverseBinaryTreeInOrder(root, action);
     printf("\n");
+
+    traverseBinaryTreePostOrder(root, action);
+    printf("\n");
 }
