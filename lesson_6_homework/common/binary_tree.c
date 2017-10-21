@@ -16,6 +16,9 @@ Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child) {
         case LEFT:
             parent->left = child;
             break;
+        case RIGHT:
+            parent->right = child;
+            break;
     }
 
     return child;
