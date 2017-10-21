@@ -38,6 +38,9 @@ void printStringData(TraverseAction action, void *data) {
         case SEPARATOR:
             printf(",");
             break;
+        case POST_RIGHT:
+            printf(")");
+            break;
     }
 }
 
