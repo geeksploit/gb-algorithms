@@ -11,5 +11,9 @@ Node *makeNode(void *data) {
 }
 
 Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child) {
+
+    switch (splitDirection) {
+    }
+
     return child;
 }
