@@ -91,4 +91,6 @@ void traverseBinaryTreeInOrder(Node *node, t_function handler) {
     handler(ROOT_NODE, node->data);
     handler(SEPARATOR, NULL);
 
+    if (node->right)
+        traverseBinaryTreeInOrder(node->right, handler);
 }
