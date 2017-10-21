@@ -5,4 +5,6 @@ int main() {
 }
 
 unsigned int hash_sum(char *input_string) {
+    unsigned int hash = 0;
+    return hash;
 }
