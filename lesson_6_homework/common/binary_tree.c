@@ -113,4 +113,6 @@ void traverseBinaryTreePostOrder(Node *node, t_function handler) {
         handler(NO_NODE, NULL);
     handler(SEPARATOR, NULL);
 
+    if (node->right)
+        traverseBinaryTreePreOrder(node->right, handler);
 }
