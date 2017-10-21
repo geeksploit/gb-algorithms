@@ -13,6 +13,9 @@ Node *makeNode(void *data) {
 Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child) {
 
     switch (splitDirection) {
+        case LEFT:
+            parent->left = child;
+            break;
     }
 
     return child;
