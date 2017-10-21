@@ -9,4 +9,6 @@ struct Node {
 };
 typedef struct Node Node;
 
+Node *makeNode(void *data);
+
 #endif //LESSON_6_HOMEWORK_BINARY_TREE_H
