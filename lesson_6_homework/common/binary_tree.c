@@ -29,6 +29,9 @@ Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child) {
 
 void printStringData(TraverseAction action, void *data) {
     switch (action) {
+        case ROOT_NODE:
+            printf("%s", (char *) data);
+            break;
     }
 }
 
