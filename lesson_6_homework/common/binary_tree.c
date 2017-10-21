@@ -80,4 +80,6 @@ void traverseBinaryTreeInOrder(Node *node, t_function handler) {
         handler(ROOT_NODE, node->data);
         return;
     }
+
+    handler(PRE_LEFT, NULL);
 }
