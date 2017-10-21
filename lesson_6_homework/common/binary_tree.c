@@ -6,5 +6,6 @@ Node *makeNode(void *data) {
     node->parent = NULL;
     node->left = NULL;
     node->right = NULL;
+    node->data = data;
     return node;
 }
