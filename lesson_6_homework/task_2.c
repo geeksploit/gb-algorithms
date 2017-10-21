@@ -1,5 +1,6 @@
 /*
  * 2. Переписать программу, реализующее двоичное дерево поиска.
+ * а) Добавить в него обход дерева различными способами;
  */
 
 #include <stdio.h>
@@ -23,5 +24,8 @@ int main() {
     printf("\n");
 
     traverseBinaryTreeInOrder(root, action);
+    printf("\n");
+
+    traverseBinaryTreePostOrder(root, action);
     printf("\n");
 }
