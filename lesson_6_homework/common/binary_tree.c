@@ -32,6 +32,9 @@ void printStringData(TraverseAction action, void *data) {
         case ROOT_NODE:
             printf("%s", (char *) data);
             break;
+        case PRE_LEFT:
+            printf("(");
+            break;
     }
 }
 
