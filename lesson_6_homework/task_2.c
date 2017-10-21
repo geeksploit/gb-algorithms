@@ -14,4 +14,7 @@ int main() {
     appendNode(left, LEFT, makeNode("left_1_left"));
     appendNode(left, RIGHT, makeNode("left_1_right"));
     appendNode(right, LEFT, makeNode("right_1_left"));
+
+    traverseBinaryTreePreOrder(root, action);
+    printf("\n");
 }
