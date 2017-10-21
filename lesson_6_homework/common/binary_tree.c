@@ -41,6 +41,9 @@ void printStringData(TraverseAction action, void *data) {
         case POST_RIGHT:
             printf(")");
             break;
+        case NO_NODE:
+            printf("NULL");
+            break;
     }
 }
 
