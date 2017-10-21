@@ -9,3 +9,7 @@ Node *makeNode(void *data) {
     node->data = data;
     return node;
 }
+
+Node *appendNode(Node *parent, SplitDirection splitDirection, Node *child) {
+    return child;
+}
