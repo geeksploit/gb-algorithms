@@ -29,6 +29,8 @@ void traverseBinaryTreePreOrder(Node *node, t_function handler);
 
 void traverseBinaryTreeInOrder(Node *node, t_function handler);
 
+void traverseBinaryTreePostOrder(Node *node, t_function handler);
+
 void printStringData(TraverseAction action, void *data);
 
 #endif //LESSON_6_HOMEWORK_BINARY_TREE_H
